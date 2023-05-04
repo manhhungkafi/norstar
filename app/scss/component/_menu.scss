@@ -35,8 +35,7 @@
     ul > li > a {
         @include transition3;
         display: inline-block;
-        padding: 12px 20px;
-        color: $bgr-body;
+        padding: 12px 20px; 
         position: relative;
     }
     .sub-menu li a {
@@ -65,8 +64,7 @@
     }
     .menu-item-has-children .arrow:before {
         font-family: "Font Awesome 5 Pro";
-        content: "\f107";
-        color: $bgr-body;
+        content: "\f107"; 
     }
 
     .menu-item-has-children.current-menu-item .arrow:before {
@@ -169,8 +167,7 @@
     li {
         margin-right: 0;
         a {
-            padding: 10px 20px;
-            color: $bgr-body;
+            padding: 10px 20px; 
             opacity: 0.9;
         }
         &:hover .sub-menu {

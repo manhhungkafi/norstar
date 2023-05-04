@@ -1,0 +1,16 @@
+#footer {
+  padding: 80px 0;
+  background-color: #171717;
+}
+#footer .footer-content .title {
+  margin-bottom: 20px;
+  font-size: 80px;
+  line-height: 1.2;
+  color: #fff;
+}
+#footer .footer-content .social li {
+  margin-right: 30px;
+}
+#footer .footer-content .social li:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=footer.css.map */
