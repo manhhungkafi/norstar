@@ -19,7 +19,7 @@
  
 .button-style {
     @include transition3;
-    padding: 12px 36px;
+    padding: 13px 28px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 700;
@@ -27,6 +27,14 @@
     color: $bg_2;
     background-color: $color-hover;
     position: relative;
+    text-transform: capitalize;
+    &.style2 {
+        background-color: $bg_3;
+        &:hover {
+            background-color: $white;
+            color: $bg_2;
+        }
+    }
     &:hover {
         background-color: $white;
     }

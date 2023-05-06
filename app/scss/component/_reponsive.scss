@@ -15,6 +15,21 @@
 }
 
 @include res991 {
+    .mr-35 {
+        margin-right: 0;
+    }
+    .ml-35 {
+        margin-left: 0;
+    }
+    .pr-35 {
+        padding-right: 0;
+    }
+    .service-box-style2 {
+        padding: 60px 0 60px 0;
+    }
+    .pl-65 {
+        padding-left: 0;
+    }
     .project-content {
         padding: 0 15px;
     }
@@ -32,6 +47,14 @@
     }
     .header .social {
         display: none;
+    }
+    .max-width-690 {
+        max-width: 100%;
+    }
+    .counter_wrapper.style2 {
+        max-width: 100%;
+        margin-right: 0;
+        padding: 0px 15px 0px 15px;
     }
 }
 
@@ -64,15 +87,19 @@
     .project-banner {
         padding:70px 15px 150px;
     }
+    .page-title .content-box {
+        .content { 
+            .title {
+                font-size: 60px !important;
+            }
+        }
+    }
     .page-title.style1 .content-box {
         padding-right: 0;
         padding-bottom: 150px;
         .content {
             width: 100%;
-            max-width: 100%;
-            .title {
-                font-size: 60px;
-            }
+            max-width: 100%; 
         }
         .button {
             width: 120px;
@@ -81,6 +108,9 @@
     }
     .tf-section {
         padding: 70px 0 !important;
+    }
+    .home2 .tf-section.tf-service {
+        padding: 0 !important;
     }
     .counter_wrapper {
         flex-wrap: wrap;

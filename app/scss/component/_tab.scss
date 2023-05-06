@@ -1,3 +1,55 @@
 @use '../abstracts/' as *;
 
- 
+ .flat-tabs {
+    .menu-tab {
+        @include flex(flex-start,flex-start);
+        border-bottom: 1px solid $txt-color;
+        li {
+            font-size: 24px;
+            line-height: 40px;
+            color: $bg_2;
+            font-weight: 700;
+            font-family: $font-main-1;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+            }
+        }
+    }
+ }
+
+ .tf-about {
+    .flat-tabs {
+        .content-inner {
+            margin-top: 32px;
+            p {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .menu-tab {
+        @include flex(flex-start,space-between);
+        li {
+            font-size: 24px;
+            line-height: 40px;
+            color: $bg_2;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -1px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #171717;
+                @include transition3;
+                opacity: 0;
+            }
+            &.active {
+                &::after {opacity: 1;}
+            }
+        }
+    }
+ }

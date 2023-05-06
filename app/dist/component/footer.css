@@ -45,6 +45,9 @@
   text-align: right;
   padding-top: 5px;
 }
+#footer .footer-form .button-style {
+  padding: 12px 36px;
+}
 #footer .footer-form form {
   text-align: left;
   max-width: 690px;

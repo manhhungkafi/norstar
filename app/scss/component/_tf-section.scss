@@ -28,7 +28,9 @@
 .pd-16 {
     padding: 0 16%;
 }
-
+.max-width-690 {
+    max-width: 690px;
+}
 .mb-36 {
     margin-bottom: 36px;
 }
@@ -43,8 +45,28 @@
     margin-bottom: 16px;
 }
 
+.pl-65 {
+    padding-left: 65px;
+}
+
+.ml-35 {
+    margin-left: -35px;
+}
+
+.mr-35 {
+    margin-right: -35px;
+}
+
+.pl-35 {
+    padding-left: 35px;
+}
+
+.pr-35 {
+    padding-right: 35px;
+}
+
 .mb-5 {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 .pb-5 {
     padding-bottom: 5px;
@@ -69,4 +91,8 @@
 
 .max-width-460 {
     max-width: 460px;
+}
+
+.color_2 {
+    color: $bg_2;
 }

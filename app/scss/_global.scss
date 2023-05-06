@@ -87,8 +87,8 @@ h3,
 }
 h4,
 .h4 {
-    font-size: 44px;
-    line-height: 1.25;
+    font-size: 36px;
+    line-height: 1.2222;
 }
 h5,
 .h5 {
@@ -132,6 +132,12 @@ p {
 
 .container {
     max-width: 1440px;
+    &.w_1470 {
+        max-width: 1470px;
+    }
+    &.w_1920 {
+        max-width: 1920px;
+    }
 }
 
 .z-index {
@@ -179,6 +185,14 @@ a {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
 .container {
     width: 100%;
     margin: auto;
@@ -208,6 +222,15 @@ a {
 }
 .bg_main_2 {
     background: $bg_2;
+}
+
+
+.bg_main_3 {
+    background: #BBADFF;
+}
+
+.bg_main_4 {
+    background: #F3F1FB;
 }
 
 // form //
@@ -600,19 +623,54 @@ input[type="color"]::placeholder {
 .themes-color {
     h1,h2,h3,h4,h5.h6 {
         color: $bg_2;
+    } 
+}
+
+.themes-bg {
+    .tf-title .sub-title.white,
+    .sub-title,h6 {
+        color: $bg_2;
     }
-    // a,p,span {
-    //     color: $bg_2;
-    // }
+    .swiper-pagination span {
+        background: transparent;
+        border-color: $bg_2;
+        &.swiper-pagination-bullet-active {
+            background-color: $bg_2;
+        }
+    }
+    .swiper-pagination span::after {
+        border-color: $bg_2;
+    }
 }
 
 .is_dark {
+    #footer.themes-bg-style,
+    .themes-bg-style {
+        background-color: #000;
+    }
+    .themes-bg {
+        .tf-title .sub-title.white,
+        .sub-title,h6 {
+            color: $white;
+        }
+        .swiper-pagination span {
+            background: transparent;
+            border-color: $white;
+            &.swiper-pagination-bullet-active {
+                background-color: $white;
+            }
+        }
+        .swiper-pagination span::after {
+            border-color: $white;
+        }
+    }
     .themes-bg {
         background-color: $bg_2;
     }
     .themes-color {
+        ul li,
         h1,h2,h3,h4,h5.h6 {
-            color: $bg_2;
+            color: $white !important;
         }
         a,p,span {
             color: $white;
