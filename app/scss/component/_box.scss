@@ -150,29 +150,40 @@
             font-size: 22px;
             line-height: 30px;
             color: $bg_2;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
             text-transform: capitalize;
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            color: $txt-color;
+            a {
+                color: $bg_2;
+                &:hover {
+                    color: $color-hover;
+                }
+            }
         }
         .date {
             font-size: 14px;
             line-height: 22px;
-            color: $bg_2;
             span {
-                position: relative;
-                padding-left: 34px;
-                &::before {
-                    position: absolute;
-                    top: 50%;
-                    width: 20px;
-                    height: 1px;
-                    background-color: $bg_2;
-                    left: 3px;
-                    content: "";
-                    @include transition3;
+                .date {
+                    position: relative;
+                    padding-left: 34px;
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        width: 20px;
+                        height: 1px;
+                        background-color: $bg_2;
+                        left: 3px;
+                        content: "";
+                        @include transition3;
+                    }
                 }
             }
             &:hover {
-                color: $color-hover;
                 span { 
                     &::before {
                         background-color: $color-hover;

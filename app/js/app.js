@@ -506,6 +506,29 @@
         });
         }, 800);
     };
+
+    var themescolor = function () {
+        $(".dark").on('click', function (e) {
+            e.preventDefault();
+            $(".body").addClass("is_dark")
+            $(".light").removeClass("is_active")
+            $(".dark").addClass("is_active")
+    
+            $(".tf-text").removeClass("style")
+            $(".tf-text").addClass("s1") 
+        });
+        $(".light").on('click', function (e) {
+            e.preventDefault();
+            $(".body").removeClass("is_dark")
+            $(".light").addClass("is_active")
+            $(".dark").removeClass("is_active")
+    
+            $(".tf-text").addClass("style")
+            $(".tf-text").removeClass("s1") 
+        });
+    };
+
+
   
     // Dom Ready
     $(function () {
@@ -531,6 +554,7 @@
         });
         loadmore();
         Preloader();
+        themescolor();
     });
 
 })(jQuery);
