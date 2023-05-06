@@ -5,9 +5,22 @@
     .box {
         width: calc((100% - 40px) /4);
         text-align: center;
+        &:nth-child(1) {
+            padding-left:60px;
+        }
+        &:nth-child(2) {
+            padding-left:20px;
+        }
+        &:nth-child(3) {
+            padding-right:24px;
+        }
+        &:nth-child(4) {
+            padding-right:60px;
+        }
         .content {
             .box-couter {
                 .number-content {
+                    margin-bottom: 7px;
                     color: $black;
                     font-size: 64px;
                     line-height: 1.25;
@@ -39,6 +52,7 @@
         border: none;
     }
     .number {
+        font-family: $font-main-2;
         @include transition3;
         font-size: 44px;
         line-height: 50px;
@@ -47,7 +61,7 @@
         font-weight: 700;
     }
     .content {
-        padding-right: 60px;
+        padding-right: 14%;
         .title {
             color: $txt-color;
             text-transform: capitalize;
@@ -83,7 +97,7 @@
 
 .project-box {
     .image {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         position: relative;
         .button {
             position: absolute;
@@ -98,7 +112,7 @@
     .content {
         .title {
             color: $bg_2;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         p {
             color: $bg_2;
@@ -118,6 +132,9 @@
 .tf-post {
     .image {
         margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
     }
     .content {
         .tag {
@@ -127,13 +144,14 @@
             line-height: 22px;
             font-weight: 700;
             color: $bg_2;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .title {
             font-size: 22px;
             line-height: 30px;
             color: $bg_2;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
         }
         .date {
             font-size: 14px;
@@ -141,7 +159,7 @@
             color: $bg_2;
             span {
                 position: relative;
-                padding-left: 30px;
+                padding-left: 34px;
                 &::before {
                     position: absolute;
                     top: 50%;

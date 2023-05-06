@@ -18,8 +18,16 @@ var swiper =  new Swiper(".sl-brand", {
             slidesPerView: 1,
             spaceBetween: 12,
         },
-        750: {
+        400: {
             slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+        },
+        750: {
+            slidesPerView: 3,
             spaceBetween: 12,
         },
         991: {

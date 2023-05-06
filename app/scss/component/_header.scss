@@ -21,7 +21,7 @@
     }
     .main-nav {
         position: absolute;
-        left: 31%;
+        left: 29.7%;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -56,18 +56,16 @@
     @include flex(center, flex-start);
     li {
         position: relative;
-        margin-right: 35px;
+        margin-right: 28px;
         a {
             font-family: $font-main-1; 
             position: relative;
             display: block;
-            color: $white;
-            padding-right: 0;
-            padding-top: 6px;
-            padding-bottom: 6px;    
+            color: $white;  
             font-size: 16px;
             line-height: 26px;
             font-weight: 700;  
+            letter-spacing: 0;
             &::before {
                 position: absolute;
                 width: 100%;

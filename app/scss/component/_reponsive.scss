@@ -15,20 +15,127 @@
 }
 
 @include res991 {
+    .project-content {
+        padding: 0 15px;
+    }
     .show-destop {
+        display: none;
+    }
+    .counter_wrapper .box {
+        padding: 0 15px !important;
+    }
+    .project-banner {
+        padding-bottom: 180px;
+    }
+    .mobile-button {
+        display: block;
+    }
+    .header .social {
         display: none;
     }
 }
 
 @include res767 {
-    
+    #footer .footer-form form {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    #footer .footer-content {
+        padding-right: 0;
+    }
+    .mobile-mb0 {
+        margin-bottom: 0 !important; 
+    }
+    .tf-post {
+        margin-bottom: 30px;
+    }
+    .sl-brand  {
+        .swiper-slide a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .pd-16 {
+        padding: 0;
+    }
+    .pt-96 {
+        padding-top: 40px;
+    }
+    .project-banner {
+        padding:70px 15px 150px;
+    }
+    .page-title.style1 .content-box {
+        padding-right: 0;
+        padding-bottom: 150px;
+        .content {
+            width: 100%;
+            max-width: 100%;
+            .title {
+                font-size: 60px;
+            }
+        }
+        .button {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .tf-section {
+        padding: 70px 0 !important;
+    }
+    .counter_wrapper {
+        flex-wrap: wrap;
+        .box {
+            padding: 15px 15px 0 !important;
+            width: calc((100% - 40px) / 2);
+        }
+    }
+    .max-width-460 {
+        max-width: 100%;
+    }
+    .mobile-mb30 {
+        margin-bottom: 30px;
+    }
+    .service-box .content {
+        padding-right: 30px;
+    }
+    .service-box .number {
+        margin-right: 30px;
+    }
 }
 
 
 @include res600 {
-     
+    .project-banner {
+        .tf-title {
+            display: block;
+            .title {
+                margin-bottom: 30px;
+            }
+            .title, 
+            p {
+                width: 100%;
+                padding: 0;
+            }
+        }
+       
+    }
+    .project-content {
+        flex-wrap: wrap;
+        .col-50 {
+            width: 100%;
+        }
+    }
+    .pt-96 {
+        padding-top: 0;
+    }
 }
 
 @include res500 {
-    
+    .counter_wrapper {
+        flex-wrap: wrap;
+        .box {
+            padding: 15px 15px 0 !important;
+            width: 100%;
+        }
+    }
 }

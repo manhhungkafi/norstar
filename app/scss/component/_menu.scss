@@ -37,6 +37,11 @@
         display: inline-block;
         padding: 12px 20px; 
         position: relative;
+        font-family: $font-main-1;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: $bg_2;
     }
     .sub-menu li a {
         padding-left: 40px;
@@ -168,7 +173,8 @@
         margin-right: 0;
         a {
             padding: 10px 20px; 
-            opacity: 0.9;
+            opacity: 1;
+            color: $bg_2;
         }
         &:hover .sub-menu {
             opacity: 1;

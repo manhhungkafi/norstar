@@ -1,9 +1,41 @@
 @use '../abstracts/' as *;
- 
+.cursor1 {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-hover;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: $color-hover;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
 .page-title {
     position: relative;
     background-color: $bg_1; 
     padding: 300px 0 122px;
+    padding: 26% 0 6.5%;
     &.style1 {
         .overlay {
             position: absolute;
@@ -14,6 +46,7 @@
             background: url('./../../assets/images/backgroup/bg_page_title_1.png') center center no-repeat;
             background-size: cover;
             opacity: 0.2;
+            background-attachment: fixed;
         }
         .content-box {
             position: relative;
@@ -21,7 +54,7 @@
             .content {
                 max-width: 75%;
                 .title {
-                    margin-bottom: 24px;
+                    margin-bottom: 20px;
                 }
             }
             .button {
@@ -62,7 +95,7 @@
 .project-banner {
     background: url('./../../assets/images/backgroup/bg_featured.png') center center no-repeat;
     background-size: cover;
-    padding: 100px 120px 296px;
+    padding: 100px 120px 290px;
     .tf-title {
         .title,
         p {
@@ -72,7 +105,7 @@
     }
 }
 
-.project-content { margin-top: -20%;
+.project-content { margin-top: -18.5%;
     padding: 0 120px;
     @include flex(flex-start,space-between);
     .col-50 {
@@ -92,9 +125,9 @@
         background-color: $color-hover;
         transform: rotate(15deg);
         top: 0;
-        right: 24px;
+        right: 30px;
         &.style2 {
-            right: 90px;
+            right: 100px;
         }
     }
 }
@@ -111,4 +144,15 @@
         background-size: cover;
     }
 
+}
+
+.home1 {
+    .tf-section {
+        &.tf-project {
+            padding-bottom: 88px;
+        }
+        &.tf-testimonial {
+            padding-bottom: 60px;
+        }
+    }
 }

@@ -2,20 +2,59 @@
   padding: 80px 0;
   background-color: #171717;
 }
-
+#footer .footer-content {
+  padding-right: 20%;
+}
 #footer .footer-content .title {
   margin-bottom: 20px;
   font-size: 80px;
-  line-height: 1.2;
+  line-height: 96px;
   color: #fff;
+  position: relative;
 }
-
+#footer .footer-content .title a {
+  position: absolute;
+  left: 225px;
+  top: -5px;
+}
 #footer .footer-content .social li {
-  margin-right: 30px;
+  margin-right: 24px;
 }
-
 #footer .footer-content .social li:last-child {
   margin-right: 0;
-} 
+}
+#footer .footer-content .social li img {
+  width: 36px;
+  height: 36px;
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#footer .footer-content .social li a:hover img {
+  transform: scale(1.3);
+}
+#footer .footer-content .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+#footer .footer-form {
+  text-align: right;
+  padding-top: 5px;
+}
+#footer .footer-form form {
+  text-align: left;
+  max-width: 690px;
+  margin-left: auto;
+}
+#footer .footer-form form fieldset {
+  margin-bottom: 60px;
+}
+#footer .footer-form form fieldset.mb-52 {
+  margin-bottom: 52px;
+}
 
 /*# sourceMappingURL=footer.css.map */
