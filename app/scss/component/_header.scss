@@ -10,13 +10,22 @@
     z-index: 1000;
     height: 80px;
     background-color: transparent;
-    @include flex(center,space-between);   
+    @include flex(center,space-between);
+
     #site-header-inner {
         @include flex(center,flex-start);
         position: relative;
         width: $w100;
         .tf-button {
             margin-left: auto;
+            padding: 8px 16px;
+            color: $bg_2;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 700;
+            &:hover {
+                background-color: $white;
+            }
         }
     }
     .main-nav {

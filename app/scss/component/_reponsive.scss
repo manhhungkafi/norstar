@@ -15,6 +15,14 @@
 }
 
 @include res991 {
+    .header #site-header-inner .tf-button {
+        display: none;
+    }
+    .page-title.style3 .content-box .image-box {
+        margin-left: 130px;
+        margin-top: 40px;
+    }
+    .mr-25,
     .mr-35 {
         margin-right: 0;
     }
@@ -27,6 +35,9 @@
     .service-box-style2 {
         padding: 60px 0 60px 0;
     }
+
+    .pl-88,
+    .tf-statistics .tf-title,
     .pl-65 {
         padding-left: 0;
     }
@@ -56,9 +67,85 @@
         margin-right: 0;
         padding: 0px 15px 0px 15px;
     }
+    .pt-98 {
+        padding-top: 30px;
+    }
+    .tf-spacing {
+        height: 50px !important; 
+    }
+    .portfolio-box.style2.style3 {
+        right: 0;
+    }
+    .mt-35 {
+        margin-top: 0 !important;
+    }
 }
 
 @include res767 {
+    .home3 #footer {
+        margin-top: -50px;
+    }
+    .section-about {
+        .tf-title {
+            display: block !important;
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .section-about.tf-section {
+        padding: 30px !important;
+    }
+    .home3 .tf-section.tf-blog {
+        padding-bottom: 200px !important;
+    }
+    .wrapper-blog {
+        display: block;
+        .tf-post {
+            width: 100%;
+        }
+    }
+    .max-width-650 {
+        max-width: 100%;
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .content-skill {
+        margin-right: 0;
+    }
+    .tf-statistics {
+        .image {
+            padding: 0 15px;
+            position: relative;
+            margin-bottom: 30px;
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .counter_wrapper.style3 {
+            padding-left: 0;
+            width: 100%;
+        }
+    }
+    .page-title.style3 .content-box .content,
+    .page-title.style3 .content-box .image-box {
+        width: 100%;
+    }
+    .page-title.style3 .content-box {
+        display: block;
+    }
+    .page-title.style3 .content-box .image-box {
+        margin-left: auto;
+        .like,
+        .graphic {
+            left: 0;
+        }
+    }
     #footer .footer-form form {
         max-width: 100%;
         margin-top: 30px;

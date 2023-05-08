@@ -40,4 +40,61 @@ var swiper =  new Swiper(".sl-brand", {
         },
     }
 }); 
+
+var swiper =  new Swiper(".sl-brand-2", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 60,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 60,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+        750: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+        },
+        1280: {
+            slidesPerView: 5,
+            spaceBetween: 60,
+        },
+    }
+}); 
+
+
  
+var swiper =  new Swiper(".sl-testimonial-2", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }, 
+        1280: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 

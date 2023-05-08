@@ -365,6 +365,40 @@
         });
     };
 
+    var flatProgressBar = function() {
+        if ($('.couter .chart').length > 0) {
+            var $pieChart = $('.couter .chart');
+            $pieChart.each(function () {
+            var $elem = $(this),
+                  pieChartSize = $elem.attr('data-size') || "84",
+                  pieChartAnimate = $elem.attr('data-animate') || "2100",
+                  pieChartWidth = $elem.attr('data-width') || "8",
+                  pieChartColor = $elem.attr('data-color') || "#C8F27C",
+                  pieChartTrackColor = $elem.attr('data-trackcolor') || "rgba(13, 73, 0, 1)";
+            $elem.find('span, i').css({
+                  'width': pieChartSize + 'px',
+                  'height': pieChartSize + 'px',
+                  'line-height': pieChartSize + 'px'
+            });
+            $elem.appear(function () {
+                $elem.easyPieChart({
+                      size: Number(pieChartSize),
+                      animate: Number(pieChartAnimate),
+                      trackColor: pieChartTrackColor,
+                      lineWidth: Number(pieChartWidth),
+                      barColor: pieChartColor,
+                      scaleColor: false,
+                      lineCap: 'round',
+                      onStep: function (from, to, percent) {
+                          $elem.find('span.percent').text(Math.round(percent));
+                      },
+                      rotate: 40,
+                    });
+                });
+            });
+        };
+    };
+
     var tabs2 = function(){
         $('.flat-tabs-style2').each(function(){
             $(this).find('.content-tab').children().hide();
@@ -548,7 +582,7 @@
         dropdown('#category');
         no_link();
         flatCounter();
-        // ButtonSlide();
+        flatProgressBar();
         $(window).on("load resize", function () {
             parallax();
         });
