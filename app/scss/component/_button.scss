@@ -15,6 +15,21 @@
         background-color: $white;
         color: $bg_2;
     }
+    &.style2 {
+        border-radius: 10px;
+        background-color: $bg_6;
+        color: $white;
+        padding: 15px 24px;
+        height: auto;
+        width: auto;
+        &:hover {
+            background-color: $bg_2;
+            color: $white;
+        }
+        img {
+            margin-left: 8px;
+        }
+    }
 }
  
 .button-style {

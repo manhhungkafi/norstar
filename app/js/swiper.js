@@ -98,3 +98,35 @@ var swiper =  new Swiper(".sl-testimonial-2", {
         clickable: true,
     },
 }); 
+
+var swiper =  new Swiper(".sl-testimonial-3", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        500: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }, 
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 

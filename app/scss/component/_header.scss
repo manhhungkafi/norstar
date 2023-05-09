@@ -61,6 +61,35 @@
         
     }
 } 
+.header-style2 {
+    #main-nav .menu { 
+        li {
+            &.menu-item-has-children > a::after {
+                color: $bg_2;
+            }
+            a {
+                color: $bg_2;
+                &::before {
+                    background-color: $bg_2;
+                } 
+            }
+        }
+    }
+}
+.curved-text{
+    position:relative;
+    display:inline-block;
+    margin:0 auto;
+    font-size:32px;
+  }
+   
+  .curved-text span{
+    min-width:0.5em;
+    text-align:center;
+    padding:30px;
+    margin:0px;
+    color: #000;
+  }
 #main-nav .menu {
     @include flex(center, flex-start);
     li {

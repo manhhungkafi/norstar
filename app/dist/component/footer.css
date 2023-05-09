@@ -3,6 +3,87 @@
   padding: 80px 0;
   background-color: #171717;
 }
+#footer.style2 {
+  background-color: #FAF9F5;
+}
+#footer.style2 .cta {
+  margin-bottom: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#footer.style2 .cta .footer-form,
+#footer.style2 .cta .content {
+  width: 50%;
+}
+#footer.style2 .cta input,
+#footer.style2 .cta textarea {
+  color: #171717;
+}
+#footer.style2 .cta textarea:focus,
+#footer.style2 .cta input:focus {
+  border-color: #3C60DC;
+}
+#footer.style2 .cta .footer-form .button.style2 {
+  position: relative;
+  border-radius: 10px;
+  color: #171717;
+  background: linear-gradient(266.86deg, rgba(118, 205, 103, 0.1) 0%, rgba(51, 114, 236, 0.1) 99.53%);
+}
+#footer.style2 .cta .footer-form .button.style2::after {
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  border: 1px solid #3C60DC;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#footer.style2 .cta .footer-form .button.style2:hover::after {
+  border-color: transparent;
+}
+#footer.style2 .footer-left .header__logo {
+  margin-bottom: 12px;
+}
+#footer.style2 .footer-left p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "DM Sans", sans-serif;
+  color: #3A3B3E;
+}
+#footer.style2 .footer-left .social li {
+  margin-right: 20px;
+}
+#footer.style2 .footer-left .social li:last-child {
+  margin-right: 0;
+}
+#footer.style2 .footer-left .social li img {
+  width: 20px;
+  height: 20px;
+}
+#footer.style2 .footer-contact p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #3A3B3E;
+  margin-bottom: 8px;
+  font-family: "DM Sans", sans-serif;
+}
+#footer.style2 .footer-contact a {
+  font-size: 24px;
+  font-family: 500;
+  line-height: 36px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #171717;
+}
 #footer .overlay {
   position: absolute;
   width: 100%;
