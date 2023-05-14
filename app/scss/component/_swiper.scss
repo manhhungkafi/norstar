@@ -17,6 +17,19 @@
             }
         }
     }
+    &.style3 {
+        span {
+            background-color: transparent;
+            border: 1px solid  $bg_2;
+            &::after {
+                border: 1px solid $bg_2;
+            }
+            &.swiper-pagination-bullet-active {
+                background-color: $bg_2;
+                border: 1px solid  $bg_2;
+            }
+        }
+    }
     span {
         opacity: 1;
         width: 8px;

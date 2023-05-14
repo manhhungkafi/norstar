@@ -4,10 +4,11 @@
   background-color: #171717;
 }
 #footer.style2 {
+  padding-bottom: 40px;
   background-color: #FAF9F5;
 }
 #footer.style2 .cta {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   background: #FFFFFF;
   box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
   border-radius: 16px;
@@ -16,13 +17,35 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-#footer.style2 .cta .footer-form,
+#footer.style2 .cta .footer-form {
+  width: 52%;
+  padding-top: 0;
+  margin-top: -1px;
+}
+#footer.style2 .cta .footer-form form fieldset {
+  margin-bottom: 42px !important;
+}
+#footer.style2 .cta .footer-form form fieldset.mb-52 {
+  margin-bottom: 33px !important;
+}
 #footer.style2 .cta .content {
-  width: 50%;
+  padding-right: 15%;
+  width: 48%;
 }
 #footer.style2 .cta input,
 #footer.style2 .cta textarea {
   color: #171717;
+  font-size: 18px;
+  line-height: 36px;
+  border-bottom: 1px solid #A0A3AA !important;
+  font-family: "DM Sans", sans-serif;
+}
+#footer.style2 .cta input::placeholder,
+#footer.style2 .cta textarea::placeholder {
+  color: #A0A3AA !important;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "DM Sans", sans-serif;
 }
 #footer.style2 .cta textarea:focus,
 #footer.style2 .cta input:focus {
@@ -54,14 +77,14 @@
   margin-bottom: 12px;
 }
 #footer.style2 .footer-left p {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   font-size: 14px;
   line-height: 22px;
   font-family: "DM Sans", sans-serif;
   color: #3A3B3E;
 }
 #footer.style2 .footer-left .social li {
-  margin-right: 20px;
+  margin-right: 24px;
 }
 #footer.style2 .footer-left .social li:last-child {
   margin-right: 0;
@@ -69,6 +92,15 @@
 #footer.style2 .footer-left .social li img {
   width: 20px;
   height: 20px;
+}
+#footer.style2 .footer-contact {
+  padding-top: 20px;
+}
+#footer.style2 .footer-contact.style1 {
+  padding-left: 80px;
+}
+#footer.style2 .footer-contact.style2 {
+  padding-left: 190px;
 }
 #footer.style2 .footer-contact p {
   font-size: 16px;
@@ -81,7 +113,7 @@
   font-size: 24px;
   font-family: 500;
   line-height: 36px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #171717;
 }
 #footer .overlay {

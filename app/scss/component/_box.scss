@@ -97,6 +97,28 @@
             }
         }
     }
+    &.style4 {
+        .box {
+            width: calc((100% - 0px) /4);
+            .content .box-couter {
+                .number-content {
+                    font-family: $font-main-3;
+                    font-weight: 600;
+                }
+            }
+            .content .desc {
+                font-weight: 500;
+                font-family: $font-main-1;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+    }
 }
 
 .service-box {
@@ -148,6 +170,18 @@
                 path {
                     fill: $white;
                 }
+            }
+        }
+        .effect-arow  {
+            .effect {
+                left: 200%;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .effect-absolute {
+                left: 0;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -233,6 +267,13 @@
             color: $white;
         }
     }
+    &:hover {
+        .icon {
+            a {
+                transform: translate3d(10px,-10px,-10px);
+            }
+        }
+    }
 }
 
 .service-box-style4 {
@@ -242,25 +283,29 @@
     border-left: 4px solid transparent;
     position: relative;
     @include transition3;
-    padding: 24px 32px;
+    padding: 24px 32px 24px 28px;
     @include flex(center,space-between);
     margin-bottom: 28px;
     &:last-child {
         margin-bottom: 0;
     }
     .content {
-        padding-right: 15px;
+        padding-right: 25px;
         h5 {
             color: $bg_2;
             font-family: $font-main-3;
             margin-bottom: 8px;
+            font-weight: 600;
         }
         p {
             font-family: $font-main-1;
+            color: $color_1;
         }
     }
     
     .icon {
+        @include transition3;
+        transform: translate3d(0,0,0);
         a {
             svg {
                 path {
@@ -281,21 +326,27 @@
     &:hover {
         border-color: $bg_6;
     } 
+    &:hover {
+        transform: translateY(-10px);
+        .icon {
+            transform: translate3d(10px,-10px,-10px);
+        }
+    }
 }
 
 .project-box {
     .image {
         margin-bottom: 40px;
         position: relative;
-        .button {
+        .position-button {
             position: absolute;
-            @include transition3;
             opacity: 0;
-            transform: translateY(5px);
             visibility: hidden;
             right: 40px;
             bottom: 40px;
-        }
+            @include transition3;
+
+        } 
     }
     .content {
         .title {
@@ -308,7 +359,7 @@
     }
     &:hover {
         .image {
-            .button {
+            .position-button {
                 opacity: 1;
                 transform: translateY(0);
                 visibility: visible;
@@ -326,12 +377,12 @@
 }
 
 .project-box-style2 {
+    @include transition3;
     box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
     border-radius: 20px;
     background-color: $white;
     border-bottom: 4px solid transparent;
-    @include transition3;
-    padding: 40px;
+    padding: 40px 40px 34px;
     margin-bottom: 40px;
     .image {
         position: relative;
@@ -361,10 +412,10 @@
         padding-right: 50px;
         color: $bg_2;
         margin-bottom: 20px;
-        font-family: $font-main-4;
+        font-family: $font-main-3;
         font-size: 32px;
         line-height: 40px;
-        font-family: 600;
+        font-weight: 600;
     }  
     &.active,
     &:hover {
@@ -413,7 +464,32 @@
 }
 
 .tf-post {
+    &:hover {
+        .image {
+            &::before {
+                opacity: 1;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            }
+        }
+    }
     .image {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            z-index: 1;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+            content: "";
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+        }
         margin-bottom: 30px;
         img {
             width: 100%;
@@ -633,9 +709,10 @@
     box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
     border-radius: 20px;
     background: $white;
-    padding: 40px;
+    padding: 40px 40px 35px ;
     border-bottom: 4px solid transparent;
     @include transition3;
+    text-align: center;
     .desc {
         font-size: 20px;
         line-height: 32px;
@@ -659,6 +736,7 @@
         font-weight: 700;
         font-family: $font-main-1; 
         text-transform: uppercase;
+        letter-spacing: 1px;
     } 
 }
 
@@ -666,13 +744,16 @@
     background: #FFFFFF; 
     box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
     border-radius: 20px;
-    padding: 36px;
+    padding: 36px 36px 31px;
     position: relative;
     border-bottom: 4px solid transparent; 
     @include transition3;
     &.active,
     &:hover {
         border-color: #3C60DC; 
+    }
+    &:hover {
+        transform: translateY(-10px);
     }
     .icon {
         width: 100px;
@@ -697,6 +778,7 @@
         h5 {
             color: $bg_2;
             margin-bottom: 12px;
+            font-family: $font-main-3;
         }
         p {
             color: $color_1;

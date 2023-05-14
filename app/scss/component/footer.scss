@@ -2,21 +2,44 @@
 #footer { 
     position: relative;
     &.style2 {
+        padding-bottom: 40px;
         background-color: $bg_7;
         .cta {
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             background: #FFFFFF; 
             box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
             border-radius: 16px;
             padding: 40px;
             @include flex(flex-start,flex-start);
-            .footer-form,
+            .footer-form {
+                width: 52%;
+                padding-top: 0;
+                margin-top: -1px;
+                form fieldset {
+                    margin-bottom: 42px !important; 
+                    &.mb-52 {
+                        margin-bottom: 33px !important;
+                    }
+                }
+            }
+
             .content {
-                width: 50%;
+                padding-right: 15%;
+                width: 48%;
             }
             input,
             textarea {
                 color: $bg_2;
+                font-size: 18px;
+                line-height: 36px;
+                border-bottom: 1px solid $txt-color !important;
+                font-family: $font-main-1;
+                &::placeholder {
+                    color: $txt-color !important;
+                    font-size: 18px;
+                    line-height: 36px;
+                    font-family: $font-main-1;
+                }
             }
             textarea:focus,
             input:focus {
@@ -50,7 +73,7 @@
                 margin-bottom: 12px;
             }
             p {
-                margin-bottom: 12px;
+                margin-bottom: 6px;
                 font-size: 14px;
                 line-height: 22px;
                 font-family: $font-main-1;
@@ -58,7 +81,7 @@
             }
             .social {
                 li {
-                    margin-right: 20px;
+                    margin-right: 24px;
                     &:last-child {
                         margin-right: 0;
                     }
@@ -70,6 +93,13 @@
             }
         }
         .footer-contact {
+            padding-top: 20px;
+            &.style1 {
+                padding-left: 80px;
+            }
+            &.style2 {
+                padding-left: 190px;
+            }
             p {
                 font-size: 16px;
                 line-height: 26px;
@@ -81,7 +111,7 @@
                 font-size: 24px;
                 font-family: 500;
                 line-height: 36px;
-                font-family: $font-main-4;
+                font-family: $font-main-3;
                 color: $bg_2;
                 
             }

@@ -1,19 +1,35 @@
 @use '../abstracts/' as *;
+$spacing: 80px;
+$hover-margin: -$spacing;
+$hover-size: $spacing * 2 ;
 
- 
+$border: 2px;
+$spacing-2: 50px; 
+$hover-size: $spacing-2 * 2 - $border * 2;
+$hover-margin: -($spacing-2 - 2);
+
 .button {
-    width: 100px;
-    height: 100px;
+    width: $spacing * 2;
+    height: $spacing * 2;
     background-color: $color-hover;
     color: $bg_2;
     font-size: 18px;
     line-height: 24px;
     border-radius: 50%;
     font-weight: 700;
+    position: relative;
     @include flex(center,center);
-    &:hover {
-        background-color: $white;
-        color: $bg_2;
+    @include transition2; 
+    &.style-2 {
+        width: $spacing-2 * 2;
+        height: $spacing-2 * 2; 
+        &.hover-circle { 
+            &:hover {
+                span {
+                    color: $bg_6;
+                }
+            }
+        }
     }
     &.style2 {
         border-radius: 10px;
@@ -22,13 +38,53 @@
         padding: 15px 24px;
         height: auto;
         width: auto;
+        font-family: $font-main-1;
+        font-size: 16px;
         &:hover {
             background-color: $bg_2;
             color: $white;
+            img {
+                transform: translate3d(5px,-5px,-5px);
+            }
         }
         img {
-            margin-left: 8px;
+            @include transition3;
+            margin-left: 12px;
         }
+    }
+    &.hover-circle { 
+        transform: translateY(0);
+        .text { 
+            z-index: 10;
+            position: relative;
+        }
+        span {
+            @include transition2;
+        }
+        .effect {
+            background-color: $white;
+            display: block;
+            height: 0;
+            left: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            width: 0;
+            border-radius: 50%; 
+        }
+        &:hover {
+            transform: translateY(-8px);
+            background-color: $white;
+            span {
+                color: $bg_2;
+            }
+            .effect {
+              height: $hover-size;
+              margin-left: $hover-margin;
+              margin-top: $hover-margin;
+              width: $hover-size; 
+            }
+          }
     }
 }
  
@@ -101,8 +157,10 @@
         .btn-main {
             transform: translate3d(6px, 6px ,6px);
         }
+        .btn-absolute {border-radius: 5px;}
     }
     .btn-absolute {
+        @include transition3;
         width: 100%;
         height: 100%;
         right: -6px;
@@ -116,3 +174,25 @@
     } 
 }
  
+
+.effect-arow {
+    position: relative;
+    min-width: 42px;
+    overflow: hidden;
+    .effect-absolute,
+    .effect {
+        position: absolute;
+        @include transition3;
+    }
+    .effect {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .effect-absolute {
+        opacity: 0;
+        visibility: hidden;
+        left: -180%;
+    }
+
+}

@@ -32,7 +32,7 @@ body {
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: #fff;  
 }
 
 .fixed {
@@ -248,6 +248,13 @@ a {
     &.align-items-end {
         align-items: flex-end;
     }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 
@@ -272,6 +279,10 @@ a {
 
 .bg_main_7 {
     background: $bg_7;
+}
+
+.bg_main_8 {
+    background: $bg_8;
 }
 
 .boder-right {

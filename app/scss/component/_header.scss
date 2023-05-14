@@ -173,6 +173,16 @@
         visibility: visible;
         height: 80px;
         background-color: $bg_2;
+        #main-nav .menu li.menu-item-has-children > a::after,
+        #main-nav .menu li > a {
+            color: $white;
+        }
+        #main-nav .sub-menu li a {
+            color: $bg_2;
+            &:hover {
+                color: $color-hover;
+            }
+        }
     }
 }
 
