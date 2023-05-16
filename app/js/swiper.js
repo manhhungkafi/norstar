@@ -109,6 +109,37 @@ var swiper =  new Swiper(".sl-brand-3", {
     }
 }); 
 
+var swiper =  new Swiper(".sl-brand-4", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 5,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+        },
+        750: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+        },
+        1280: {
+            slidesPerView: 6,
+            spaceBetween: 5,
+        },
+    }
+}); 
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,

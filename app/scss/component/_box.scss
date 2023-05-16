@@ -785,3 +785,27 @@
         }
     }
 }
+
+.feature-box {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 32px;
+    @include flex(flex-start,flex-start);
+    width: calc((100% - 28px) / 2);
+    margin-bottom: 28px;
+    .icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 40px;
+        min-width: 80px;
+    }
+    .content {
+        .title {
+            color: $bg_2;
+            margin-bottom: 8px;
+        }
+        .desc {
+            color: $color_1;
+        }
+    }
+}
