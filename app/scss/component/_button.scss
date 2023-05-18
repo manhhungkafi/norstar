@@ -52,6 +52,44 @@ $hover-margin: -($spacing-2 - 2);
             margin-left: 12px;
         }
     }
+    &.style3 {
+        border-radius: 1000px;
+        background-color: $bg_6;
+        color: $white;
+        padding: 15px 40px;
+        height: auto;
+        width: auto;
+        font-family: $font-main-1;
+        font-size: 16px;
+        &:hover {
+            background-color: $bg_2;
+            color: $white;
+            img {
+                transform: translate3d(5px,-5px,-5px);
+            }
+        }
+        img {
+            @include transition3;
+            margin-left: 12px;
+        }
+        &.gradient { 
+
+            background-image: $gradient;
+            color: $bg_2;
+            background-size: 300% 100%;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            &:hover {
+                background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+            }
+        }
+    }
     &.hover-circle { 
         transform: translateY(0);
         .text { 

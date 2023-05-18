@@ -10,10 +10,32 @@
 @include res1600 {  
 }
 @include res1440 { 
-    
+    .post-wrapper .tf-post .image {
+        height: auto;
+    }
 }
 
 @include res1200 {
+    .testimonial-content {
+        padding: 70px 70px;
+    }
+    .pricing-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+        .pricing-box-style2 {
+            width: calc((100% - 40px) / 2);
+            margin-bottom: 30px;
+            .content {
+                padding: 30px 16px 80px;
+            }
+        }
+    }
+
+    .content {
+        &.pt-55 {
+            padding-top: 0;
+        }
+    }
     #footer.style2 .footer-contact {
         padding-left: 0 !important; 
     }
@@ -31,6 +53,41 @@
 }
 
 @include res991 {
+    .home8 .counter_wrapper {
+        padding-top: 0;
+    }
+    .home8 .tf-project .image-box {
+        padding-right: 0;
+        &.left .box {
+            right: 15px;
+        }
+        &.pl-50 {
+            padding-left: 0;
+        }
+    }
+    .tablet-mb30 {
+        margin-bottom: 30px;
+    }
+    .content {
+        &.pl-70 {
+            padding-left: 0;
+        }
+        &.pr-11 {
+            padding-right: 0;
+        }
+    }
+    .page-title.style5 .content-box {
+        display: block;
+        .image-box {
+            width: 100%;
+            margin-left: 0;
+        }
+        .content {
+            padding-right: 0;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
     .user-dashboard {
         &.flex{
             display: block;
@@ -146,10 +203,49 @@
     .about-box {
         padding: 20px;
     }
-
+    .section-about.style2 {
+        padding: 40px 30px;
+    }
 }
 
 @include res767 {
+    .section-about.style2 {
+        .justify-end {
+            justify-content: flex-start;
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+    .post-wrapper {
+        flex-wrap: wrap;
+        .tf-post {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .testimonial-content {
+        padding: 70px 16px;
+    }
+    .pricing-wrapper {
+        .pricing-box-style2 {
+            width: 100%; 
+        }
+    }
+
+    .feature-wrapper {
+        flex-wrap: wrap;
+        .feature-box {
+            width: 100%;
+            margin-bottom: 30px; 
+        }
+    }
+    .home8 .tf-section.tf-brand {
+        padding: 0 !important;
+    }
+    .page-title.style5 {
+        padding: 120px 0 70px;
+    }
     .article-dashboard .body-dashboard {
         padding: 10px 16px 0;
     }
@@ -296,6 +392,9 @@
     }
     .tf-section {
         padding: 70px 0 !important;
+        &.mobile-pb0 {
+            padding-bottom: 0 !important;
+        }
     }
     .home2 .tf-section.tf-service {
         padding: 0 !important;

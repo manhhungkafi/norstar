@@ -134,6 +134,10 @@ p {
     padding: 0 !important;
 }
 
+.radius-16 {
+    border-radius: 16px;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -166,6 +170,12 @@ p {
     height: $w100;
     overflow: hidden;
     position: relative;
+}
+
+.text-gradient {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .row {
@@ -265,6 +275,10 @@ a {
     background: $bg_2;
 }
 
+.bg_main_10 {
+    background: $bg_10;
+}
+
 
 .bg_main_3 {
     background: #BBADFF;
@@ -292,6 +306,9 @@ a {
 .radius-10 {
     border-radius: 10px;
 }
+.radius-4 {
+    border-radius: 4px;
+}
 
 .color1 {
     color: $color_1 !important;
@@ -310,6 +327,10 @@ a.color2 {
 
 .gradient {
     background: $gradient;
+}
+
+.right {
+    text-align: right;
 }
  
 
@@ -482,6 +503,12 @@ input[type="color"]::placeholder {
     margin-bottom: 0 !important;
     &.pb-98 {
         padding-bottom: 98px;
+    }
+    &.pd0 {
+        padding: 0;
+    }
+    &.pt-80 {
+        padding-top: 80px;
     }
 }
 

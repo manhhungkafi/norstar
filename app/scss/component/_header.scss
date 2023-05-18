@@ -11,7 +11,9 @@
     height: 80px;
     background-color: transparent;
     @include flex(center,space-between);
-
+    .show-header-fixed {
+        display: none;
+    }
     #site-header-inner {
         @include flex(center,flex-start);
         position: relative;
@@ -173,6 +175,12 @@
         visibility: visible;
         height: 80px;
         background-color: $bg_2;
+        .social {
+            display: none;
+        }
+        .show-header-fixed {
+            display: flex;
+        }
         #main-nav .menu li.menu-item-has-children > a::after,
         #main-nav .menu li > a {
             color: $white;

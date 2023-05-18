@@ -122,6 +122,8 @@
   height: 100%;
   left: 0;
   top: 0;
+  background: url("./../../assets/images/backgroup/bg_footer.png") center center no-repeat;
+  background-size: cover;
 }
 #footer .footer-content {
   padding-right: 20%;

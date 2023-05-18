@@ -16,6 +16,55 @@
             &:active {
             }
         }
+    } 
+ }
+
+ .flat-tabs-style2 {
+    position: relative;
+    z-index: 2;
+    margin-top: -52px;
+    .menu-tab {
+        padding-bottom: 52px;
+        border: none;
+        justify-content: flex-end;
+        li {
+            position: relative;
+            &:hover {
+                cursor: pointer;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -1px;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #171717;
+                @include transition3;
+                opacity: 0;
+            }
+            &.active {
+                &::after {opacity: 1;}
+            }
+            margin-left: 24px;
+            span {
+                @include transition3;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+                color: #A0A3AA;
+                font-family: $font-main-4;
+            }
+            &:nth-child(1) {
+                margin-right: 0;
+            } 
+            &:hover,
+            &.active {
+                span {
+                    color: $bg_2;
+                }
+            }
+        }
     }
  }
 
