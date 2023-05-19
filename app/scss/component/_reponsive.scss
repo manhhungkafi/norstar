@@ -206,9 +206,89 @@
     .section-about.style2 {
         padding: 40px 30px;
     }
+    .home9 {
+        .service-wrapper .service-box-style5 {
+            width: calc((100% - 32px) / 2);
+        }
+    }
+    .content {
+        &.pt-48 {
+            padding-top: 0;
+        }
+        &.pl-24 {
+            padding-left: 0;
+        }
+    }
+    .image.pl-20 {
+        padding-left: 0;
+    }
+    .flat-tabs-style2 {
+        margin-top: 0;
+        .menu-tab {
+            padding-bottom: 40px;
+            justify-content: flex-start;
+        }
+    }
+    .testimonials-box-style3 {
+        padding: 30px;
+        .content {
+            padding-left: 24px;
+        }
+    }
 }
 
 @include res767 {
+    .testimonials-box-style3 {
+        padding: 16px;
+        display: block;
+        .content,
+        .image {
+            width: 100%;
+        }
+        .content {
+            margin-top: 30px;
+            padding-left: 24px;
+        }
+    }
+    .flat-tabs-style2 .content-inner { 
+        flex-wrap: wrap;
+    }
+    .project-box-style3 {
+        width: calc((100% - 32px) / 2);
+    }
+    .graphic {
+        width: auto !important;
+    }
+    .page-title.style6 {
+        .overlay {
+            height: 90%;
+        }
+        .content-box .content {
+            display: block;
+            .box {
+                width: 100%;
+                padding-left: 0 !important;
+            }
+        }
+    }
+    .home9 { 
+        .tf-cta .image .image-style {
+            right: 0;
+        }
+        .clients {
+            .information.counter_wrapper .box {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                text-align: center !important;
+            }
+            .about {
+                display: block;
+                .tf-title-style4 {
+                    width: 100%;
+                }
+            }
+        }
+    }
     .section-about.style2 {
         .justify-end {
             justify-content: flex-start;
@@ -395,6 +475,9 @@
         &.mobile-pb0 {
             padding-bottom: 0 !important;
         }
+        &.mobile-pt0 {
+            padding-top: 0 !important;
+        }
     }
     .home2 .tf-section.tf-service {
         padding: 0 !important;
@@ -440,7 +523,10 @@
         }
     }
     .mobile-block {
-        display: block;
+        display: block !important;
+    }
+    #footer.style2.black .cta {
+        padding: 40px 16px;
     }
     .article-dashboard .body-dashboard .section-inner {
         .flat-tabs .menu-tab {
@@ -602,6 +688,17 @@
 
 
 @include res600 {
+    .project-box-style3 {
+        width: 100%;
+    }
+    .home9 {
+        .service-wrapper .service-box-style5 {
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     .article-dashboard .body-dashboard .section-inner{
         .resume-box {
             display: block;

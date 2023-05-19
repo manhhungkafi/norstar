@@ -7,6 +7,51 @@
   padding-bottom: 40px;
   background-color: #FAF9F5;
 }
+#footer.style2.black {
+  padding-top: 0;
+  background-color: #171717;
+}
+#footer.style2.black .cta {
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+#footer.style2.black .cta .tf-button {
+  border-radius: 4px;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "DM Sans", sans-serif;
+}
+#footer.style2.black .footer-left .header__logo {
+  margin-bottom: 4px;
+}
+#footer.style2.black .footer-left ul {
+  margin-bottom: 10px;
+}
+#footer.style2.black .footer-left p {
+  color: #fff;
+}
+#footer.style2.black .footer-contact.style1 {
+  padding-left: 38px;
+  padding-top: 18px;
+}
+#footer.style2.black .footer-contact.style2 {
+  padding-left: 110px;
+  padding-top: 18px;
+}
+#footer.style2.black .footer-contact a,
+#footer.style2.black .footer-contact p {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+}
+#footer.style2.black .footer-contact a {
+  font-weight: 700;
+}
 #footer.style2 .cta {
   margin-bottom: 60px;
   background: #FFFFFF;

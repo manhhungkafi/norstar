@@ -191,11 +191,37 @@ $hover-margin: -($spacing-2 - 2);
             border-radius: 0;
         }
     }
+    &.style6 { 
+        .btn-absolute {
+            border-radius: 0;
+            background-color: $white;
+        }
+        .btn-main {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 12px 24px;
+            letter-spacing: 1px;
+            background-color: $color-hover; 
+            border-radius: 0;
+            text-transform: uppercase;
+            @include flex(center,center);
+            img {
+                margin-left: 16px;
+            }
+        }  
+        &:hover {
+            .btn-main {
+                transform: translate3d(6px, 6px ,6px);
+            }
+            .btn-absolute {border-radius: 0px;}
+        }
+    }
     &:hover {
         .btn-main {
             transform: translate3d(6px, 6px ,6px);
         }
-        .btn-absolute {border-radius: 5px;}
+        .btn-absolute {border-radius: 4px;}
     }
     .btn-absolute {
         @include transition3;

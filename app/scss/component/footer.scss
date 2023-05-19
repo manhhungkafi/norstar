@@ -4,6 +4,55 @@
     &.style2 {
         padding-bottom: 40px;
         background-color: $bg_7;
+        &.black {
+            padding-top: 0;
+            .cta {
+                background-color: transparent;
+                box-shadow: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 0;
+                margin-bottom: 40px;
+                .tf-button {
+                    border-radius: 4px;
+                    padding: 12px 32px;
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $font-main-1;
+                }
+            }
+            background-color: $bg_2;
+            .footer-left {
+                .header__logo {
+                    margin-bottom: 4px;
+                }
+                ul {
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: $white;
+                }
+            }
+            .footer-contact {
+                &.style1 {
+                    padding-left: 38px;
+                    padding-top: 18px;
+                }
+                &.style2 {
+                    padding-left: 110px;
+                    padding-top: 18px;
+                }
+                a,
+                p {
+                    font-family: $font-main-1;
+                    color: $white;
+                }
+                a {
+                    font-weight: 700;
+                }
+            }
+        }
         .cta {
             margin-bottom: 60px;
             background: #FFFFFF; 

@@ -431,7 +431,7 @@
     }
     &.style6 {
         background-color: transparent;
-        padding: 140px 0 60px;
+        padding: 146px 0 60px;
         .overlay {
             background-color: $bg_2;
             position: absolute;
@@ -444,7 +444,7 @@
         .content-box {
             position: relative;
             .content {
-                margin-bottom: 60px;
+                margin-bottom: 77px;
                 @include flex(flex-start,flex-start);
                 .box {
                     width: 50%;
@@ -465,6 +465,7 @@
                         margin-bottom: 28px;
                     }
                     .button {
+                        padding: 12px 38px;
                         border: 1px solid #E6E6E6;
                         border-radius: 10px;
                         background-color: transparent;
@@ -479,6 +480,69 @@
                 .wrap-video {
                     z-index: 2;
                     position: absolute;
+                }
+            }
+        }
+    }
+    &.style7 {
+        background-color: transparent;
+        padding: 180px 0 0;
+        .content-box {
+            @include flex(flex-start,flex-start);
+            position: relative;
+            .content {
+                padding-top: 102px;
+                width: 55%;
+                .title {
+                    margin-bottom: 32px;
+                    font-family: $font-main-5;
+                    letter-spacing: -1px;
+                    position: relative;
+                    color: $white;
+                    text-transform: capitalize;
+                    letter-spacing: 0;
+                    font-size: 56px;
+                    line-height: 68px;
+                    span {
+                        font-family: $font-main-5;
+                        margin-top: 3px;
+                        letter-spacing: 0;
+                        text-transform: capitalize; 
+                        font-size: 80px;
+                        line-height: 1.2;
+                    }
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: -28px;
+                    }
+                }
+                .sub-title {
+                    font-family: $font-main-1;
+                    font-size: 22px;
+                    line-height: 36px; 
+                    margin-bottom: 32px;
+                    color: $white;
+                }
+            } 
+            .image-box {
+                width: 45%;
+                position: relative;
+                @include flex(center,flex-end);
+                margin-left: 0; 
+                .box {
+                    background-color: $color-hover;
+                    padding: 12px 16px;
+                    position: absolute;
+                    right: -20px;
+                    bottom: 40px;
+                    p {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: $bg_2;
+                        font-family: $font-main-4;
+                    }
                 }
             }
         }
@@ -751,6 +815,14 @@
     h1,h2,h3,h4,h5 {
         font-family: $font-main-4;
     }
+    .post-wrapper {
+        .tf-post {
+            .image {
+                margin-bottom: 28px;
+                height: 313px;
+            }
+        }
+    }
     .tf-section {
         &.tf-brand {
             padding: 0;
@@ -959,14 +1031,25 @@
     }
 }
 
-.home9 {
-    .header #site-header-inner .tf-button {
-        padding: 0 32px;
-        height: 50px;
-        @include flex(center,center);
-        color: $white;
-        &:hover {
-            color: $bg_2;
+.home9 { 
+    .tf-title-style4 h5.title,
+    .tf-title-style4 h3.title {
+        font-family: $font-main-1;
+    }
+    .testimonials-box-style3 {
+        max-width: 1037px;
+        margin: 0 auto;
+    }
+    .header {
+        height: 88px;
+        #site-header-inner .tf-button {
+            padding: 0 32px;
+            height: 50px;
+            @include flex(center,center);
+            color: $white;
+            &:hover {
+                color: $bg_2;
+            }
         }
     }
     .container {
@@ -976,9 +1059,10 @@
         .about {
             @include flex(flex-start,space-between);
             .tf-title-style4 {
-                width: 50%;
+                width: 48%;
             }
             ul {
+                padding: 2px 4px 0 0;
                 li {
                     @include flex(flex-start,flex-start);
                     margin-bottom: 25px;
@@ -1008,8 +1092,14 @@
                     text-align: left;
                     padding-left: 0;
                 }
+                &:nth-child(2) {
+                    padding: 0 82px 0 0;
+                }
+                &:nth-child(3) {
+                    padding: 0 0 0 12px;
+                }
                 &:nth-child(4) {
-                    padding-right: 0;
+                    padding: 0 0 0 100px;
                 }
                 .content {
                     .box-couter .number-content {
@@ -1043,7 +1133,12 @@
                     font-weight: 700;
                     font-family: $font-main-1;
                     color: $bg_10;
-                    margin-bottom: 8px;
+                    margin-bottom: 9px;
+                    .style {
+                        font-size: 24px;
+                        line-height: 30px;
+                        padding-left: 4px;
+                    }
                 }
                 .desc {
                     font-family: $font-main-1;
@@ -1052,6 +1147,7 @@
                     line-height: 24px;
                     text-transform: uppercase;
                     color: $white;
+                    letter-spacing: 1.3px;
                 }
             }
         }
@@ -1059,21 +1155,20 @@
             position: relative;
             .graphic {
                 position: absolute;
-                right: 80px;
-                top: 15%;
+                right: 12%;
+                top: 20%;
             }
             .img-main {
-                width: 70%;
+                width: 72%;
                 img {
                     border-radius: 0 0 250px 250px;
                 }
             }
             .image-style {
                 position: absolute;
-                right: 15px;
-                bottom: -20px;
-                width: 100%;
-                max-width: 270px;
+                right: 24px;
+                bottom: -5px;
+                width: 47%;
                 margin-left: auto;  
                 border: 20px solid $bg_2;
                 border-radius: 250px 250px 0 0;
@@ -1084,9 +1179,32 @@
             }
         }
     }
-    .project {}
+    .tf-section {
+        &.tf-brand {
+            padding: 40px 0;
+        }
+        &.services {
+            padding-bottom: 65px;
+        }
+        &.tf-cta {
+            padding: 80px 0 80px;
+        }
+        &.project {
+            padding-top: 115px;
+        }
+        &.tf-blog {
+            padding-bottom: 72px;
+        }
+    }
 }
-
+.home10 {
+    .tf-title-style4 h3.title {
+        font-family: $font-main-5;
+    }
+    &.body {
+        background-color: $bg_2;
+    }
+}
 .content-skill {
     padding: 68px 140px 68px 80px;
     margin-right: -130px;
@@ -2068,13 +2186,13 @@
     }
 }
 
+
 .post-wrapper {
     @include flex(inherit,space-between);
     .tf-post {
         width: calc((100% - 80px) / 3);
-        .image {
-            height: 313px;
-            margin-bottom: 28px;
+        .image { 
+            margin-bottom: 25px;
             img {
                 height: 100%;
             }
@@ -2087,6 +2205,32 @@
             .title {
                 font-size: 24px;
                 line-height: 36px;
+            }
+        }
+        &.style2 {
+            .image {
+                border-radius: 12px;
+                .tag {
+                    z-index: 2;
+                    position: absolute;
+                    left: 17px;
+                    bottom: 15px;
+                    padding: 0 7px;
+                    background-color: $bg_10;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-family: $font-main-1;
+                    color: $white;
+                    letter-spacing: 1px;
+                }
+            }
+            .content {
+                .title {
+                    font-family: $font-main-1;
+                    padding-right: 10px;
+                }
             }
         }
     }
