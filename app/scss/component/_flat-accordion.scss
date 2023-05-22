@@ -40,7 +40,6 @@
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 32px;
-                font-family: $font-main-4;
                 color: $bg_2;
                 margin-bottom: 0;
             } 
@@ -53,4 +52,67 @@
             }
         }
     } 
+    &.font4 {
+        .flat-toggle {
+            .toggle-title {
+                z-index: 2;
+                .title {
+                    font-family: $font-main-4;
+                }
+            }
+        }
+    }
+    &.style2 {
+        background-color: transparent;
+        border: none;
+        max-width: 795px;
+        margin: 0 auto;
+        .flat-toggle {
+            padding: 20px 32px 14px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 61.65%);
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 28px;
+            &.active {
+                padding-top: 28px;
+            }
+            .toggle-title {
+                z-index: 2;
+                .title {
+                    font-size: $font-main-2;
+                    color: $white;
+                    padding-bottom: 7px;
+                }
+            }
+            .toggle-content {
+                z-index: 2;
+                padding-bottom: 12px;
+                p {
+                    padding-top: 16px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    color: $txt-color;
+                }
+            }
+            &::before {
+                @include transition3;
+                border-radius: 12px;
+                content: "";
+                position: absolute;
+                border: 2px solid $color-hover;
+                z-index: 1;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            &.active,
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }

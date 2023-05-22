@@ -159,6 +159,16 @@ p {
     }
 }
 
+.brand-row1 {
+    .container {
+        max-width: 1622px;
+    }
+}
+.brand-row2 {
+    .container {
+        max-width: 1854px;
+    }
+}
 .z-index {
     z-index: 999;
 }
@@ -317,6 +327,10 @@ a {
     border-radius: 4px;
 }
 
+.radius-58 {
+    border-radius: 58px;
+}
+
 .color1 {
     color: $color_1 !important;
 }
@@ -334,6 +348,14 @@ a.color2 {
 
 .gradient {
     background: $gradient;
+}
+
+.gradient_2 {
+    background-image: $gradient_2;
+}
+
+.gradient_3 {
+    background-image: $gradient_3;
 }
 
 .right {
@@ -519,6 +541,9 @@ input[type="color"]::placeholder {
     }
     &.pb0 {
         padding-bottom: 0;
+    }
+    &.pt-120 {
+        padding-top: 120px;
     }
 }
 

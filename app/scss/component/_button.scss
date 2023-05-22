@@ -73,7 +73,6 @@ $hover-margin: -($spacing-2 - 2);
             margin-left: 12px;
         }
         &.gradient { 
-
             background-image: $gradient;
             color: $bg_2;
             background-size: 300% 100%;
@@ -83,10 +82,10 @@ $hover-margin: -($spacing-2 - 2);
             transition: all .4s ease-in-out;
             &:hover {
                 background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
             }
         }
     }
@@ -192,15 +191,20 @@ $hover-margin: -($spacing-2 - 2);
         }
     }
     &.style6 { 
+        height: 64px;
         .btn-absolute {
             border-radius: 0;
             background-color: $white;
-        }
+            height: 64px;
+            right: -10px;
+            bottom: -10px;
+        } 
         .btn-main {
             font-weight: 700;
             font-size: 14px;
             line-height: 24px;
-            padding: 12px 24px;
+            height: 64px;
+            padding: 12px 28px;
             letter-spacing: 1px;
             background-color: $color-hover; 
             border-radius: 0;
@@ -259,4 +263,27 @@ $hover-margin: -($spacing-2 - 2);
         left: -180%;
     }
 
+}
+
+.gradient_effect {
+    background-size: 300% 100%;
+    --moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    &:hover {
+        background-position: 100% 0;
+        --moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+}
+
+.tf-button-style2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $bg_2;
+    padding: 11px 34px;
 }

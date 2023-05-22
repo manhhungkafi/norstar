@@ -13,6 +13,39 @@ var swiper =  new Swiper(".sl-testimonial", {
         clickable: true,
     },
 }); 
+
+var swiper =  new Swiper(".sl-testimonial-3", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".next-testimonials",
+        prevEl: ".prev-testimonials",
+    } ,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        400: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        750: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        }
+    }
+}); 
+
 var swiper =  new Swiper(".sl-brand", {
     slidesPerView: 1,
     loop: false, 
@@ -140,6 +173,81 @@ var swiper =  new Swiper(".sl-brand-4", {
         },
     }
 }); 
+
+var swiper =  new Swiper(".sl-brand-5", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 5,
+    grabCursor: false,
+    loop: true,
+    autoplay: {
+        delay: 2,
+    }, 
+    speed: 2000,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+        991: {
+            slidesPerView: 5,
+            spaceBetween: 32,
+        },
+        1280: {
+            slidesPerView: 7,
+            spaceBetween: 32,
+        },
+    }
+}); 
+
+var swiper =  new Swiper(".sl-brand-6", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 2,
+        reverseDirection: true,
+
+    }, 
+    speed: 2000,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 32,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+        991: {
+            slidesPerView: 5,
+            spaceBetween: 32,
+        },
+        1280: {
+            slidesPerView: 8,
+            spaceBetween: 32,
+        },
+    }
+}); 
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,
@@ -196,3 +304,145 @@ var swiper =  new Swiper(".sl-testimonial-3", {
         clickable: true,
     },
 }); 
+
+var swiper = new Swiper(".mySwiper1", {
+    direction: "vertical",
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+        delay: 1, 
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper1").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, 
+    function() {
+        (this).swiper.autoplay.start();
+});
+
+var swiper = new Swiper(".mySwiper2", {
+    direction: "vertical",
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2, 
+    autoplay: {
+        delay: 1,
+        reverseDirection: true,
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper2").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+});
+var swiper = new Swiper(".mySwiper3", {
+    direction: "vertical",
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2, 
+    autoplay: {
+        delay: 1,
+    }, 
+    speed: 2000,
+    });
+    $(".mySwiper3").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+});
+
+
+
+
+
+
+
+var swiper = new Swiper(".mySwiper4", {
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        400: {
+            slidesPerView: 2
+        },
+        600: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 4
+        },
+        1200: {
+            slidesPerView: 4
+        },
+    },
+    observer: true,
+    observeParents: true,
+    shortSwipes: false,
+    longSwipes: false,
+    allowTouchMove: true,
+    reverseDirection: true,
+    autoplay: {
+    delay: 0.3, 
+    }, 
+    // autoplay:false,
+    freeMode: true, 
+    speed: 2000,
+    disableOnInteraction: true
+    });
+    $(".mySwiper4").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, 
+    function() {
+        (this).swiper.autoplay.start();
+    });
+
+var swiper = new Swiper(".mySwiper5", {
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        400: {
+            slidesPerView: 2
+        },
+        600: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 4
+        },
+        1200: {
+            slidesPerView: 5
+        },
+    },
+    observer: true,
+    observeParents: true,
+    shortSwipes: false,
+    longSwipes: false,
+    allowTouchMove: true,
+    autoplay: {
+    delay: 0.3, 
+    reverseDirection: true,
+    }, 
+    // autoplay:false,
+    freeMode: true, 
+    speed: 2200,
+    disableOnInteraction: true
+    });
+
+    $(".mySwiper5").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+    });

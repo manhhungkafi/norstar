@@ -13,9 +13,37 @@
     .post-wrapper .tf-post .image {
         height: auto;
     }
+    .page-title.style7 .content-box {
+        .content .title span {
+            font-size: 56px;
+        }
+        .image-box .box {
+            right: 0;
+        }
+    } 
 }
 
 @include res1200 {
+    .page-title.style8 .content-box {
+        .content {
+            width: 45%;
+        }
+        .image-box {
+            width: 55%;
+        }
+    }
+    .experience-content {
+        width: 1200px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+    .page-title.style7 .content-box {
+        .content .title span {
+            font-size: 44px;
+        } 
+    } 
     .testimonial-content {
         padding: 70px 70px;
     }
@@ -53,6 +81,86 @@
 }
 
 @include res991 {
+    .team-box-wrapper {
+        flex-wrap: wrap;
+        .team-box {
+            width: calc((100% - 32px) / 2);
+            margin-bottom: 30px;
+        }
+    }
+
+    .number-box-wrapper {
+        flex-wrap: wrap;
+        .number-box {
+            margin-bottom: 32px;
+            width: calc((100% - 32px) / 2);
+        }
+    }
+    .about-box-style2 {
+        padding-left: 20px;
+    }
+    .page-title.style8 .content-box {
+        display: block;
+        .content,
+        .image-box {
+            width: 100%;
+        }
+        .content {
+            margin-bottom: 50px;
+        }
+        .image-box {
+            .justify-end {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    } 
+    .project-box-style4 {
+        .content {
+            width: 50%;
+            padding: 0 30px 0 0;
+            .desc {
+                margin-bottom: 30px;
+            }
+        }
+        .image {
+            width: 50%;
+            padding-left: 30px;
+        }
+        &.style {
+            .image {
+                padding-right: 30px;
+            }
+            .content {
+                padding-left: 30px;
+            }
+        }
+    }
+ 
+    .home10 .flat-tabs-style2 {
+        margin-top: 0;
+        .menu-tab {
+            padding-bottom: 40px;
+            flex-wrap: wrap;
+        }
+    }
+    .pl-35 {
+        padding-left: 0;
+    }
+    .page-title.style7 .content-box {
+        display: block;
+        .content {
+            padding-top: 70px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        .image-box {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    } 
     .home8 .counter_wrapper {
         padding-top: 0;
     }
@@ -238,6 +346,115 @@
 }
 
 @include res767 {
+    .banner-style {
+        padding: 32px 16px;
+    }
+    .team-box-wrapper {
+        align-items: inherit;
+        .team-box { 
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .roadmap-wrapper {
+        &::before,
+        &::after {
+            display: none;
+        }
+        .right {
+            padding-left: 0;
+            padding-top: 0px;
+        }
+        .row-roadmap { 
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+            .content {
+                &::before {
+                    display: none;
+                }
+                .icon {
+                    display: none;
+                }
+            }
+            .roadmad-box {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+            width: 100%;
+        }
+        display: block;
+        .left {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    } 
+    .about-box-style2 {
+        padding-left: 0;
+        .image {
+            margin: 0 auto 30px;
+        }
+    }
+    .home10 #footer .footer-contact a {
+        font-size: 16px;
+    }
+    .col-md-9.pr-105 {
+        padding-right: 15px;
+    }
+    .col-md-3.pl-55 {
+        padding-left: 15px;
+    }
+    .home10 .tf-testimonials .sl-testimonial-3 {
+        padding-bottom: 70px;
+    }
+    .list-service {
+        li {
+            display: block;
+            .heading,
+            .desc {
+                width: 100%;
+            }
+            .heading {
+                margin-bottom: 16px;
+            }
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .project-box-style4 {
+        display: block;
+        margin-bottom: 60px !important;
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+        .content {
+            width: 100% !important; 
+            padding: 0 !important;
+        }
+        .image {
+            padding: 0 !important;
+            width: 100% !important; 
+            border: none !important;
+        } 
+    }
+    .counter_wrapper.style5 {
+        display: block;
+        .box {
+            width: 100% !important;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     .testimonials-box-style3 {
         padding: 16px;
         display: block;
@@ -470,6 +687,9 @@
             height: 120px;
         }
     }
+    #footer {
+        padding-bottom: 70px;
+    }
     .tf-section {
         padding: 70px 0 !important;
         &.mobile-pb0 {
@@ -688,6 +908,40 @@
 
 
 @include res600 {
+    .number-box-wrapper {
+        flex-wrap: wrap;
+        .number-box {
+            margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .swiper.swiper-vertical {
+        height: 300px;
+    }
+    .swiper_vertical .item img {
+        width: 100%;
+        height: auto;
+    }
+    .home10 {
+        font-size: 16px;
+        #footer {
+            .footer-content {
+                padding-top: 20px;
+            }
+            .footer-contact {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+    .page-title.style7 .content-box .content .title span {
+        font-size: 36px;
+    }
     .project-box-style3 {
         width: 100%;
     }
