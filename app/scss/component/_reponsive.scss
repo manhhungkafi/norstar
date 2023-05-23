@@ -346,6 +346,9 @@
 }
 
 @include res767 {
+    .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Service .content-inner .box {
+        width: 100%;
+    }
     .banner-style {
         padding: 32px 16px;
     }
@@ -908,6 +911,9 @@
 
 
 @include res600 {
+    .dashboard-style2 .article-dashboard .body-dashboard .section-inner#Contact .list_contact li:nth-child(2) {
+        padding-left: 0;
+    }
     .number-box-wrapper {
         flex-wrap: wrap;
         .number-box {

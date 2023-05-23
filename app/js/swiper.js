@@ -248,6 +248,38 @@ var swiper =  new Swiper(".sl-brand-6", {
         },
     }
 }); 
+
+var swiper =  new Swiper(".sl-brand-7", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 10,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        400: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    }
+}); 
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,
