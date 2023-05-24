@@ -176,11 +176,17 @@ p {
 .white {
     color: $white;
 }
+.white-dark {
+    color: $white !important;
+}
 .color-main {
     color: $bg_2;
 }
 .color-primary {
     color: $color-hover;
+}
+.color-11 {
+    color: $bg_11;
 }
 #wrapper {
     width: $w100;
@@ -786,11 +792,420 @@ input[type="color"]::placeholder {
         border-color: $bg_2;
     }
 }
+.show-dark,
+.swiper-dark,
+.social-dark,
+.logo-dark {
+    display: none;
+}
 
-.is_dark {
+.home4 {
+    .tf-title-style4 .sub-title {
+        color: #3C60DC !important;
+    }
+}
+
+.is_dark {   
+    &.home10 {
+        background-color: $bg_2;
+    }
+    #footer.style2.black .cta {
+        background-color: $black;
+    }
+    .testimonials-box-style3 {
+        border-color: $color_1;
+        background-color: transparent;
+        .content {
+            .name a,
+            .desc {
+                color: $white !important;
+            } 
+        }
+    }
+    .flat-tabs-style2 .menu-tab li {
+        border-color: $white !important;
+        &.active span,
+        &:hover span {
+            color: $white !important;
+        }
+    }
+    &.home9 {
+        p {
+            color: $txt-color !important;
+        }
+        .clients .about ul li span {
+            color: $white;
+        }
+        .clients .information.counter_wrapper .box .content .box-couter .number-content {
+            color: $white;
+        }
+        .service-wrapper .service-box-style5 {
+            border-color: $color_1;
+            @include transition3;
+            &:hover,
+            &.active {
+                border-color: #3bbc68;
+            }
+        }
+    }
+    .page-title.style6 {
+        background-color: $bg_2;
+    }
+    &.home8 {
+        .section-about {
+            .tf-title {
+                p,
+                .title {
+                    color: $bg_2 !important;
+                }
+            }
+        }
+        .flat-accordion {
+            border-color: $white;
+            background-color: $bg_2;
+            .flat-toggle {
+                .toggle-title {
+                    .title {
+                        color: $white;
+                    }
+                    .icon {
+                        svg path {
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .testimonial-content {
+        .tf-title-style4 {
+            h3.title {
+                color: $bg_2 !important;
+            } 
+        }
+        .tf-title {
+            h6,
+            .sub-title {
+                color: $bg_2 !important;
+            }
+        }
+    }  
+    .pricing-box-style2 {
+        .content {
+            background-color: $bg_2;
+        }
+        .price {
+            color: $white !important;
+        }
+        .btn span {
+            @include transition3;
+        }
+        &.active,
+        &:hover .btn {
+            span {
+                color: $white !important;
+            }
+        }
+    }
+    &.home8 .tf-project {
+        .image-box.left .box {
+            p {
+                color: $bg_2;
+            } 
+        } 
+        .list li span  {
+            color: $white ;
+        }
+    }
+    .feature-wrapper {
+        background-color: rgba(255,255,255,0.1);
+        .feature-box {
+            background-color: $black;
+        }
+    }
+    .page-title.style5 .content-box .content {
+        form {
+            border-color: #E6E6E6;
+            button {
+                color: $white;
+            }
+        }
+        .note {
+            color: $white !important;
+        }
+    }
+    .article-dashboard .body-dashboard{
+        h1,h2,h3,h4,h5,h6 {
+            color: $white !important; 
+        } 
+        p {
+            color: $txt-color !important;
+        }
+        .section-inner {
+            .list_contact li p a {
+                color: $white;
+            }
+            &:last-child {
+                border-bottom: none !important;
+            }
+            &#Contact {
+                background-color: $bg_2;
+            }
+            .flat-tabs .menu-tab li.active {
+                border-color: $white;
+                span {
+                    color: $white;
+                }
+            }
+            .sl-testimonial  {
+                .btn-testimonials {
+                    border-color: $white !important; 
+                    i {
+                        color: $white !important;
+                    }
+                }
+            }
+            .pricing-box {
+                background-color: $bg_2;
+                border-color: $white;
+                &:hover {
+                    background-color: $color-hover;
+                    ul li span {
+                        color: $color_1 !important;
+                    }
+                    h5,
+                    .time {
+                        color: $bg_2 !important;
+                    } 
+                    .link {
+                        background-color: $white;
+                        color: $bg_2;
+                    }
+                }
+                &::before {
+                    background-color: $white;
+                }
+                .time {
+                    color: $white !important;
+                    @include transition3;
+                }
+                ul li span {
+                    @include transition3;
+                    color: $txt-color;
+                }
+                .link {
+                    border-color: $white;
+                    color: $white;
+                }
+            }
+            .testimonials-box {
+                background-color: $bg_2;
+                border-color: $white;
+                &::before {
+                    background-color: $white;
+                }
+
+            }
+            &#About .flex .counter_wrapper .box .content .box-couter .number-content {
+                color: $white;
+            }
+            &#Service .box {
+                background-color: $bg_2;
+                border-color: $white ;
+
+                &::before {
+                    background-color: $white;
+                }
+                h5,p {
+                    @include transition3;
+                }
+                &:hover {
+                    background-color: $color-hover;
+                    h5 {
+                        color: $bg_2 !important;
+                    }
+                    p {
+                        color: $color_1 !important;
+                    }
+                }
+            }
+            .my_skill .my_skill_box {
+                .progress-title-holder {
+                    span {
+                        color: $white !important;
+                    }
+                }
+                border-color: $white;
+                background-color: $bg_2;
+                .progress-content {
+                    background-color: $txt-color;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+            &#Contact form {
+                textarea,
+                input[type=text],
+                input[type=password],
+                input[type=datetime],
+                input[type=datetime-local],
+                input[type=date],
+                input[type=month],
+                input[type=time],
+                input[type=week],
+                input[type=number],
+                input[type=email],
+                input[type=url],
+                input[type=search],
+                input[type=tel], 
+                input[type=color] {
+                    background: rgba(255, 255, 255, 0.1);
+                    color: $white;
+                    &::placeholder {
+                        color: $txt-color;
+                    }
+                }
+            }
+            
+        }
+    }
+    .article-dashboard { 
+        background-color: $bg_2;
+        border-color: $white;
+        &::before {
+            background-color: $white;
+        }
+    }
+    #side-bar-dashboard {
+        .contact-btn a {
+            &::before {
+                background-color: $white;
+            }
+            span {
+                border-color: $color-hover;
+            }
+        }
+        ul li {
+            color: $txt-color;
+            span {
+                color: $white;
+            }
+        }
+        .info {
+            overflow: hidden;
+            background-color: $bg_2;
+            border-color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+    }
+    &.home6 {
+        background-color: $black;
+    }
+    .project-box-style5 {
+        border-color: $white;
+    }
+    .project-box-style5 .content .sub-title,
+    .project-box-style5 .content .title a,
+    &.home5 .tf-about .info .social li a {
+        color: $white;
+    }
+    &.home5 {
+        background: #121223;
+    }
+    #footer.style2 .footer-contact a {
+        color: $white;
+    }
+    #footer.style2 .cta .footer-form .button.style2 {
+        background: transparent;
+        color: $white;
+        svg {
+            path {
+                stroke: $white;
+            }
+        }
+    }
+    #footer.style2 {
+        background-color: $black;
+    }
+    .testimonials-box-style2,
+    .project-box-style2 {
+        background-color: $black;
+    }
+    #footer.style2 .cta,
+    .service-box-style4 {
+        background-color: $bg_2;
+    }
+    .about-box {
+        background-color: $black;
+        .icon {
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+            background-color: #3C60DC;
+        }
+    }
+    &.home10,
+    &.home8,
+    &.home4 {
+        .number-content {
+            color: $white !important;
+        }
+        p {
+            color: $txt-color !important;
+        }
+        .header #main-nav .menu li {
+            a {
+                color: $white;
+            }
+            &.menu-item-has-children > a {
+                &::after {
+                    color: $white;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+        } 
+    }
+    .show-light,
+    .swiper-light,
+    .social-light,
+    .logo-light {
+        display: none;
+    }
+    .swiper-dark,
+    .social-dark {
+        display: flex;
+    }
+    .show-dark,
+    .logo-dark {
+        display: block;
+    }
+    .page-title.style4 .content-box .content .sub-title {
+        color: $white !important;
+    }
+    &.home3 {
+        .tf-title p,
+        .sub-title {
+            color: $txt-color !important;
+        }
+        .button-style.style3 .btn-main {
+            color: $bg_2 !important;
+        }
+    }
+   
+    .tf-about .menu-tab li.active::after {
+        background-color: $white;
+    }
     #footer.themes-bg-style,
     .themes-bg-style {
         background-color: #000;
+        background: #000;
         .swiper-pagination.style2 span {
             background-color: $white;
             &::after {

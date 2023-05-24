@@ -47,6 +47,10 @@ $hover-margin: -($spacing-2 - 2);
                 transform: translate3d(5px,-5px,-5px);
             }
         }
+        svg {
+            @include transition3;
+            margin-left: 12px;
+        }
         img {
             @include transition3;
             margin-left: 12px;
@@ -210,6 +214,7 @@ $hover-margin: -($spacing-2 - 2);
             border-radius: 0;
             text-transform: uppercase;
             @include flex(center,center);
+            svg,
             img {
                 margin-left: 16px;
             }

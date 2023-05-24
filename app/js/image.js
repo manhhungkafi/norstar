@@ -1,13 +1,21 @@
-var wrapper = document.querySelector('.wrapper-image-box-style2');
+var posts = document.querySelector('.wrapper-image-box-style2');
+var post = posts.querySelectorAll('.image-box-style2');
+console.log(post.length);
+var i;
+for (i = 0; i < post.length; i++) {
+    post[i].addEventListener("mouseover", function() {
+        this.classList.add("toggle");
+        console.log(this.querySelector('img').src);
+        src = this.querySelector('img').src;
+        posts.style.backgroundImage = "url(" + src;
+        console.log(this.querySelector('img').src);
+    });
+}
 
-var box = document.querySelectorAll('.image-box-style2');
+for (i = 0; i < post.length; i++) {
+    post[i].addEventListener("mouseout", function() {
+        this.classList.remove("toggle");
+       
+    });
+}
 
-
-box.forEach(function(button){
-	console.log(button);
-	button.addEventListener('mouseover', function() {
-		console.log("123123");
-        this.classList.add("mystyle");
-        console.log(this.className);
-    })
-})

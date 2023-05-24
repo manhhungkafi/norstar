@@ -360,6 +360,14 @@
             }
         }
     } 
+    .home7 .wrapper-image-box-style2 .image-box-style2 .image .heading {
+        left: 16px;
+        bottom: 16px;
+        h3 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+    }
 }
 
 @include res767 {
@@ -999,6 +1007,15 @@
 
 
 @include res600 {
+    .home7 .wrapper-image-box-style2 .image-box-style2 .image .heading {
+        p {
+            margin-bottom: 4px;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
     .project-box-style5 {
         display: block;
         .content {

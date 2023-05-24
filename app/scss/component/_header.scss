@@ -175,8 +175,17 @@
         visibility: visible;
         height: 80px;
         background-color: $bg_2;
+        .show-light {
+            display: none !important;
+        }
+        .show-dark {
+            display: block !important;
+        }
         .social {
             display: none;
+            &.social-dark {
+                display: flex !important;
+            }
         }
         .show-header-fixed {
             display: flex;

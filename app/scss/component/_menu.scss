@@ -174,7 +174,7 @@
         a {
             padding: 10px 20px; 
             opacity: 1;
-            color: $bg_2;
+            color: $bg_2 !important;
         }
         &:hover .sub-menu {
             opacity: 1;
@@ -187,7 +187,7 @@
         }
     }
     li.current-item a{
-        color: $color-hover;
+        color: $color-hover !important;
         opacity: 1;
     }
 }
