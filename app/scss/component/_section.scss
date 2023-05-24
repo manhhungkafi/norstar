@@ -967,12 +967,197 @@
         }
     }
 }
+.home5 {
+    .header {
+        height: 98px;
+    }
+    .btn-menu {
+        width: 60px;
+        height: 60px;
+        @include flex(center,center);
+        border-radius: 50%;
+        background: linear-gradient(180deg, #D3C1FC 0.49%, #FEDFFC 52.08%, #D7E8FD 100%);
+    }
+    .copyright {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: $font-main-1;
+        text-align: center;
+        color: $bg_2;
+        padding: 35px 0;
+    }
+    .tf-about {
+        padding: 136px 0 60px;
+        .info {
+            max-width: 300px;
+            width: 100%;
+            margin-left: auto;
+            h4 {
+                margin-bottom: 8px;
+                font-size: 32px;
+                line-height: 40px;
+                font-family: $font-main-6;
+                color: $bg_2;
+                font-weight: 400;
+                span {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            .mail {
+                font-family: $font-main-6;
+                color: $bg_2;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                text-decoration: underline;
+                margin-bottom: 28px;
+            }
+            .social {
+                @include flex(center,flex-start); 
+                li {
+                    margin-right: 12px;
+                    border-radius: 50%;
+                    a {
+                        @include flex(center,center);
+                        width: 92px;
+                        height: 50px;
+                        background: url('./../../assets/images/icon/bg-social.png') center center no-repeat;
+                        background-size: cover;
+                        background-color: $white;
+                        color: $bg_2;
+                        &:hover {
+                            color: $color-hover;
+                        }
+                    }
+                }
+            }
+        }
+        .heading {
+            padding-right: 22%;
+            padding-top: 8px;
+        }
+    }
+    .container {
+        max-width: 1830px;
+    }
+    .tf-project {
+        .container {
+            max-width: 1920px;
+            padding: 0;
+        }
+    }
+    .tf-title {
+        .title {
+            font-weight: 400;
+            font-family: $font-main-6;
+            color: $bg_2;
+            span {
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .sl-project {
+        padding-right: 200px;
+        margin-right: -130px;
+        img {
+            width: 100%;
+        }
+    }
+
+}
 .home6 {
     &.body {
         height: 100vh;
     }
     .container {
         max-width: 1200px;
+    }
+}
+.home7 {
+    .container {
+        padding: 0;
+        max-width: 100%;
+    }
+    .btn-menu {
+        width: 60px;
+        height: 60px;
+        @include flex(center,center);
+        border-radius: 50%;
+        background: $white;
+    }
+    .wrapper-image-box-style2 {
+        @include flex(inherit,space-between);
+        background-position: center,center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        // &:hover {
+        //     .image-box-style2 {
+        //         .image {
+        //             // img {
+        //             //     opacity: 0;
+        //             // }
+        //         }
+        //         &::before {
+        //             opacity: 1;
+        //             background: transparent;
+        //         }
+ 
+        //     }
+        // }
+        .image-box-style2 {
+            z-index: 999;
+            &.mystyle {
+                &::before { 
+                    background: rgba(0, 0, 0, 0.3) !important;
+                }
+            }
+            .image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .heading {
+                    position: absolute;
+                    left: 60px;
+                    bottom: 40px;
+                    p {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-family: $font-main-1;
+                        color: $white;
+                        margin-bottom: 12px;
+                    }
+                    h3 {
+                        font-weight: 700;
+                        font-size: 56px;
+                        line-height: 68px;
+                        font-family: $font-main-7;
+                        color: $white;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &::before {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                content: "";
+                background: #171717;
+                opacity: 0.3;
+            }
+            width: 50%;
+        }
     }
 }
 .home8 {
@@ -1580,6 +1765,14 @@
     }
 }
 .home13 {
+    #side-bar-dashboard .info,
+    .article-dashboard {
+        height: 100%;
+        margin-bottom: 0;
+        box-shadow: 0px 5px 5px rgba(39, 63, 68, 0.1);
+        border-radius: 12px;
+    }
+    
     .container {
         max-width: 1200px
     }
@@ -1611,7 +1804,10 @@
             }
             ul.list {
                 li {
-                    padding: 15px 0;
+                    &:last-child {
+                        margin-right: 5px;
+                    }
+                    padding: 15px 0 14px;
                     border-bottom: 1px solid #E6E6E6;
                     font-size: 16px;
                     line-height: 26px;
@@ -1624,7 +1820,7 @@
                     }
                     .social {
                         li {
-                            margin-left: 20px;
+                            margin-left: 22px;
                             border: none;
                             padding: 0;
                             &:first-child {
@@ -2098,6 +2294,7 @@
                         line-height: 20px;
                         font-family: $font-main-1;
                         text-transform: uppercase;
+                        letter-spacing: 1px;
                     }
                     &.active,
                     &:hover {
@@ -2676,7 +2873,6 @@
         } 
         &.style2 {
             padding-top: 28px;
-            padding-bottom: 40px;
             p {
                 font-family: $font-main-1;
             }
@@ -2685,8 +2881,19 @@
                 .title {
                     font-family: $font-main-1;
                     &.animationtext {
+                        margin-bottom: 20px;
                         font-size: 24px;
-                        line-height: 36px
+                        line-height: 36px;
+                        &.clip .cd-words-wrapper::after {
+                            background: #EE37B4;
+                            height: 60%;
+                            top: 15px;
+                        }
+                    }
+                    span {
+                        font-size: 44px;
+                        line-height: 56px;
+                        padding-top: 2px;
                     }
                 }
                 .tag-list {
@@ -2718,6 +2925,7 @@
                         &:nth-child(1) {
                             border: none;
                             padding-left: 0;
+                            width: 25%;
                         }
                         &:nth-child(3),
                         &:nth-child(2) {
@@ -2739,6 +2947,7 @@
                                 line-height: 26px;
                                 font-family: $font-main-1;
                                 color: $color_1;
+                                text-transform: inherit;
                             }
                         }
                     }
@@ -2749,6 +2958,7 @@
                         line-height: 36px;
                     }
                     .box {
+                        width: calc((100% - 40px) / 2);
                         h5 {
                             margin-bottom: 30px;
                         }
@@ -2774,6 +2984,7 @@
                                     line-height: 1.6;
                                     font-family: $font-main-1;
                                     margin-bottom: 4px;
+                                    text-transform: capitalize;
                                 }
                             }
                         }
@@ -2784,10 +2995,22 @@
                         margin-bottom: 30px;
                     }
                     .my_skill_box {
+                        padding: 25px 28px 26px 32px;
                         border: 1px solid #E6E6E6;
                         border-radius: 8px;
                         &::before {
                             display: none;
+                        }
+                        .content-progress-box {
+                            width: calc((100% - 106px) / 3);
+                        }
+                        .progress-title-holder {
+                            margin-bottom: 11px;
+                            span {
+                                font-family: $font-main-1;
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
                         }
                     }
                 }
@@ -2795,7 +3018,7 @@
                     .box {
                         border: 1px solid #E6E6E6;
                         border-radius: 8px;
-                        padding: 32px;
+                        padding: 22px 32px 24px;
                         margin-bottom: 28px;
                         &:last-child {
                             margin-bottom: 0;
@@ -2805,6 +3028,7 @@
                             font-size: 20px;
                             line-height: 32px;
                             margin-bottom: 8px;
+                            font-family: $font-main-1;
                         }
                         p {
                             color: $color_1;
@@ -2816,7 +3040,7 @@
                     .menu-tab-inner {
                         @include flex(flex-start,flex-start);
                         border-bottom: 1px solid #A0A3AA;
-                        margin-bottom: 21px;
+                        margin-bottom: 19px;
                         border: none;
                         li {
                             &:hover {
@@ -2835,7 +3059,7 @@
                                 font-weight: 700;
                                 font-size: 14px;
                                 line-height: 24px;
-                                font-family: $font-main-4;
+                                font-family: $font-main-1;
                                 color: #A0A3AA;
                             }
                             &.active {
@@ -2853,8 +3077,8 @@
                             .box {
                                 padding: 0 !important;
                                 width: calc((100% - 32px) / 2);
-                                margin-bottom: 23px;
                                 border: none !important;
+                                margin-bottom: 34px !important;
                                 &::before {
                                     display: none;
                                 }
@@ -2870,6 +3094,7 @@
                                     position: relative;
                                     margin-bottom: 8px;
                                     @include flex(center,flex-start);
+                                    margin-bottom: 15px;
                                     img {
                                         width: 100%;
                                         border-radius: 12px;
@@ -2882,9 +3107,12 @@
                                 }
                                 .content {
                                     h5 {
+                                        font-size: 20px;
+                                        line-height: 32px;
                                         text-transform: capitalize;
                                         color: $bg_2;
-                                        margin-bottom: 4px;
+                                        margin-bottom: 2px !important;
+                                        font-family: $font-main-1;
                                     }
                                     p {
                                         font-size: 16px;
@@ -2908,6 +3136,7 @@
                         display: none;
                     }
                     h5 {
+                        margin-bottom: 25px;
                         font-size: 16px;
                         line-height: 26px;
                         font-family: $font-main-1;
@@ -2916,6 +3145,25 @@
                             @include transition3;
                             opacity: 0;
                         }
+                    }
+                    .time {
+                        font-family: $font-main-1;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        span {
+                            letter-spacing: 0;
+                            font-family: $font-main-1;
+                        }
+                    }
+                    ul {
+                        border: none;
+                        margin-top: 0;
+                        margin-bottom: 54px;
+                    }
+                    .link {
+                        border-radius: 8px;
                     }
                     &.active,
                     &:hover {
@@ -2933,7 +3181,7 @@
                     }
                 }
                 &#Contact {
-                    padding: 0;
+                    padding: 3px 0 0;
                     margin: 0;
                     background-color: transparent;
                     form textarea,
@@ -2960,9 +3208,13 @@
                             border: 1px solid #171717;
                         }
                     }
+                    .heading {
+                        font-family: $font-main-1;
+                        text-transform: capitalize;
+                    }
                     .tf-button {
                         background: #EE37B4;
-                        padding: 11px 24px;
+                        padding: 8px 22px;
                         border-radius: 4px;
                         font-weight: 700;
                         font-size: 16px;
@@ -2971,6 +3223,7 @@
                         color: $white;
                         border: 2px solid #EE37B4;
                         @include transition3;
+                        text-transform: capitalize;
                         &:hover {
                             background-color: transparent;
                             color: $bg_2;
@@ -2982,6 +3235,15 @@
                         margin: 0;
                         padding: 0;
                         width: 33.333%;
+                        &:nth-child(1) {
+                            width: 37%;
+                        }
+                        &:nth-child(2) {
+                            width: 42%;
+                        }
+                        &:nth-child(3) {
+                            width: 21%;
+                        }
                         p {
                             &:nth-child(1) {
                                 color: $txt-color;
@@ -3013,7 +3275,7 @@
                 line-height: 40px;
                 color: $bg_2;
                 text-transform: capitalize;
-                font-family: $font-main-2;
+                font-family: $font-main-1;
                 position: relative;
                 padding-left: 9px;
                 border-left: 3px solid #EE37B4;
@@ -3021,6 +3283,15 @@
                 &.h5 {
                     font-size: 24px;
                     line-height: 1.5;
+                }
+                &.mb-20 {
+                    margin-bottom: 20px;
+                }
+                &.mb-16 {
+                     margin-bottom: 16px;
+                }
+                &.mb-22 {
+                    margin-bottom: 22px;
                 }
             }
         }

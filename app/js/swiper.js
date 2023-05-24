@@ -280,6 +280,43 @@ var swiper =  new Swiper(".sl-brand-7", {
         },
     }
 }); 
+
+var swiper =  new Swiper(".sl-project", {
+    slidesPerView: 1,
+    loop: true, 
+    spaceBetween: 12,
+    autoplay: {
+        delay: 1,
+    }, 
+    speed: 2000,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 12,
+        },
+        360: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+    }
+}); 
+
  
 var swiper =  new Swiper(".sl-testimonial-2", {
     slidesPerView: 1,
