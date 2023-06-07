@@ -536,6 +536,7 @@
         $(".dark").on('click', function (e) {
             e.preventDefault();
             $(".body").addClass("is_dark")
+            $(".body").removeClass("is_light")
             $(".light").removeClass("is_active")
             $(".dark").addClass("is_active")
     
@@ -545,6 +546,7 @@
         $(".light").on('click', function (e) {
             e.preventDefault();
             $(".body").removeClass("is_dark")
+            $(".body").addClass("is_light")
             $(".light").addClass("is_active")
             $(".dark").removeClass("is_active")
     

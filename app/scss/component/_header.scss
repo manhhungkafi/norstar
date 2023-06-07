@@ -160,6 +160,16 @@
 
 /* Header Fixed
 -------------------------------------------------------------- */
+.home10 {
+    #header_main.is-fixed.is-fixed.is-small {
+        .logo-dark {
+            display: block !important;
+        }
+        .logo-light {
+            display: none !important;
+        }
+    }
+}
 #header_main.is-fixed {
     @include transition5;
     z-index: 9999;

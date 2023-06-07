@@ -188,6 +188,10 @@ p {
 .color-11 {
     color: $bg_11;
 }
+.color-12 {
+    color: $bg_12;
+}
+
 #wrapper {
     width: $w100;
     height: $w100;
@@ -300,6 +304,10 @@ a {
 
 .bg_main_10 {
     background: $bg_10;
+}
+
+.bg_13 {
+    background: $bg_13;
 }
 
 
@@ -806,6 +814,121 @@ input[type="color"]::placeholder {
 }
 
 .is_dark {   
+    .list-service li {
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        &:hover,
+        &.active .heading a {
+            color: $color-hover;
+            &::before {
+                background-color: $color-hover;
+            }
+        }
+    }
+    .project-box-style4 .content a svg path {
+        fill: $color-hover;
+    }
+    .experience-content .box {
+
+        &:hover,
+        &.active {
+            .content {
+                &::before {
+                    background-color: $white !important;
+                }
+            }
+            .date {
+                color: $color-hover !important;
+            }
+        }
+    } 
+    .counter_wrapper.style5 .box .content .icon {
+        background: rgba(255, 255, 255, 0.12);
+    }
+    .page-title.style7 .content-box .image-box .box {
+        background-color: $color-hover;
+        p {
+            color: $bg_2 !important;
+        }
+    }
+    &.home10 .counter_wrapper.style5 .box .content .desc {
+        color: $white !important;
+    }
+    .testimonials-box-style4 {
+        border-color: $color_1 !important;
+    }
+    &.home10 {
+        #footer {
+            background-color: $bg_2;
+            textarea,
+            input[type=text],
+            input[type=password],
+            input[type=datetime],
+            input[type=datetime-local],
+            input[type=date],
+            input[type=month],
+            input[type=time],
+            input[type=week],
+            input[type=number],
+            input[type=email],
+            input[type=url],
+            input[type=search],
+            input[type=tel],
+            input[type=color] {
+                border-color: rgba(255, 255, 255, 0.2);
+                color: $white;
+                &::placeholder {
+                    color: $color_1;
+                }
+                &:focus {
+                    border-color: $white;
+                }
+            }
+            .footer-contact a {
+                color: $white;
+            }
+            .footer-content .copyright {
+                color: $txt-color !important;
+            }
+        }
+        .testimonials-box-style4 .content .desc,
+        .list-service li .desc {
+            color: $white !important;
+        }
+        .flat-tabs-style2 .menu-tab li.active::after {
+            background-color: $color-hover;
+        }
+        .project-box-style4 {
+            border-color : rgba(255, 255, 255, 0.1) !important; 
+            .image {
+                border-color : rgba(255, 255, 255, 0.1) !important; 
+            }
+        }
+        h1,h2,h3,h4,h5,h6 {
+            color: $white !important;
+        }
+        p {
+            color: $txt-color !important;
+            &.sub {
+                color: $white !important;
+            }
+        }
+        
+    }
+    .button-style.style6 .btn-main {
+        svg path {
+            fill: $bg_2 !important;
+        }
+        background-color: $color-hover !important;
+        color: $bg_2 !important;
+    }
+    .page-title.style7 .content-box .content .title {
+        span {
+            color: $white;
+        }
+        &.animationtext.clip .cd-words-wrapper::after {
+            background-color: $color-hover;
+        }
+    }
     &.home10 {
         background-color: $bg_2;
     }
@@ -1149,7 +1272,21 @@ input[type="color"]::placeholder {
             background-color: #3C60DC;
         }
     }
-    &.home10,
+    &.home10 {
+        .header #main-nav .menu li {
+            a {
+                color: $white;
+            }
+            &.menu-item-has-children > a {
+                &::after {
+                    color: $white;
+                }
+                &::before {
+                    background-color: $white;
+                }
+            }
+        } 
+    }
     &.home8,
     &.home4 {
         .number-content {
