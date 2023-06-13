@@ -39,9 +39,6 @@
 
         body_dashboard.style.height = (result - offsetTop) + "px";
         body_dashboard.style.overflowY = "auto"; 
-
- 
-
     };
   
   

@@ -281,6 +281,70 @@ var swiper =  new Swiper(".sl-brand-7", {
     }
 }); 
 
+var swiper =  new Swiper(".sl-brand-8", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 2,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 2,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 2,
+        },
+        750: {
+            slidesPerView: 3,
+            spaceBetween: 2,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 2,
+        },
+        1280: {
+            slidesPerView: 6,
+            spaceBetween: 2,
+        },
+    }
+}); 
+
+var swiper =  new Swiper(".sl-brand-9", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 2,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 2,
+        },
+        600: {
+            slidesPerView: 3,
+            spaceBetween: 2,
+        },
+        750: {
+            slidesPerView: 3,
+            spaceBetween: 2,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 2,
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 2,
+        },
+    }
+}); 
+
 var swiper =  new Swiper(".sl-project", {
     slidesPerView: 1,
     loop: true, 
@@ -365,6 +429,30 @@ var swiper =  new Swiper(".sl-testimonial-3", {
         }, 
         1280: {
             slidesPerView: 3,
+            spaceBetween: 30,
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 
+
+var swiper =  new Swiper(".sl-testimonial-4", {
+    slidesPerView: 1,
+    loop: true, 
+    spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        }, 
+        1280: {
+            slidesPerView: 2,
             spaceBetween: 30,
         }
     },

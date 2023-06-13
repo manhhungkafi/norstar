@@ -79,6 +79,13 @@
 
 /* Mobile Menu Button */
 .mobile-button {
+    &.style2 {
+        span,
+        &::after,
+        &::before {
+            background: linear-gradient(88.34deg, #456AEB 32.22%, #DF5788 66.18%);
+        }
+    }
     @include transition3;
     display: none;
     position: absolute;
@@ -169,6 +176,7 @@
     -o-transform: translateY(15px);
     transform: translateY(15px);
     padding: 5px 0;
+    z-index: -99;
     li {
         margin-right: 0;
         a {
@@ -177,6 +185,7 @@
             color: $bg_2 !important;
         }
         &:hover .sub-menu {
+            z-index: 9;
             opacity: 1;
             visibility: visible;
             -webkit-transform: translateY(0);
