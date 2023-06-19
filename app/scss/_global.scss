@@ -833,9 +833,93 @@ input[type="color"]::placeholder {
 }
 
 .is_dark {   
-    &.home17 {
-
+    &.home18 {  
+        #footer ul li a {
+            color: $txt-color;
+        }
+        .dashboard-style2 .article-dashboard {
+            background: $bg_2;
+            .counter_wrapper .box .content .box-couter .number-content {
+                color: $white;
+            }
+            .body-dashboard {
+                background: $bg_2;
+                .section-inner {
+                    border-color: $color_1;
+                    &#Contact form fieldset {
+                        p {
+                            color: $white !important;
+                        }
+                        select {
+                            color: $white;
+                        }
+                        textarea,
+                        input {
+                            color: $white !important;
+                            border-color: $txt-color !important;
+                            background-color: transparent !important;
+                            &::placeholder {
+                                color: $color_1;
+                            }
+                            &:focus {
+                                border-color: $white !important; 
+                            }
+                        }
+                    }
+                    .sub-title-style {
+                        color: $white !important;
+                    }
+                    &.page {
+                        .content ul li p:nth-child(2),
+                        .title span {
+                            color: $white !important;
+                        } 
+                    }
+                    .my_skill .my_skill_box .progress-content {
+                        background-color: $white;
+                    }
+                    &#Service .wrapper_service .box-style2 {
+                        border-color: $color_1;
+                        .icon {
+                            svg {
+                                path {
+                                    fill: $white;
+                                }
+                            }
+                        }
+                        &:hover {
+                            background-color: #000000;
+                        }
+                    }
+                    .resume-box .box .inner {
+                        border-color: rgba(255, 255, 255, 0.1);
+                        >div {
+                            border-color: $white;
+                            &:hover {
+                                &::before {
+                                    border-color: $white;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    &.home17 { 
         .dashboard-style2 #side-bar-dashboard .info-style2 {  
+            .social {
+                display: none;
+                &.dark {
+                    li {
+                        a {
+                            height: 60px;
+                            width: 60px;
+                        }
+                    }
+                    display: flex;
+                }
+            }
             .info_contact li {
                 a,
                 span {

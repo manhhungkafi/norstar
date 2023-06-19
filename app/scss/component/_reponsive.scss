@@ -11,6 +11,12 @@
 @include res1600 {  
 }
 @include res1440 { 
+    .home18 .dashboard-style2 .article-dashboard {
+        padding: 0px 15px 0 ;
+    }
+    .home18 .dashboard-wapper .article-dashboard {
+        width: 100%;
+    }
     .home17 .dashboard-style2 .article-dashboard .body-dashboard {
         .section-inner.page .content ul {
             padding-left: 25px;
@@ -50,13 +56,18 @@
     body {
         position: relative;
     }
-    .show_dashboard {
+    .home18  .show_dashboard .menu_dasboard {
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        z-index: 9999;
+    }
+    .show_dashboard.home14 {
         .menu_dasboard {
             opacity: 1;
             visibility: visible;
             left: 0;
             z-index: 9999;
-
         }
     }
     .icon_dashboard {
@@ -74,38 +85,43 @@
                 fill: $white;
             }
         }
-    }
+    } 
+    .home18 .menu_dasboard,
     .home14 .menu_dasboard {
         .close_dashboard {
             display: block;
         }
         padding-bottom: 30px;
-    }
-    .menu_dasboard {
-        @include transition3;
-        position: fixed;
-        left: -100%;
-        top: 0;
-        opacity: 0;
-        visibility: hidden;
-        height: 100vh;
-        overflow-y: auto;
-        z-index: 999999999999;
-        display: block;
-        .close_dashboard {
+    } 
+    .home18,
+    .home14 {
+        .menu_dasboard {
+            @include transition3;
+            position: fixed;
+            left: -100%;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 999999999999;
             display: block;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 25px;
-            svg {
-                path {
-                    font-size: 20px;
-                    fill: $white;
+            .close_dashboard {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 25px;
+                svg {
+                    path {
+                        font-size: 20px;
+                        fill: $white;
+                    }
                 }
             }
         }
     }
+
     .post-wrapper .tf-post .image {
         height: auto;
     }
@@ -218,6 +234,53 @@
 }
 
 @include res991 {
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner {
+        .flat-tabs {
+            margin-top: 30px;
+            .menu-tab {
+                justify-content: flex-start;
+                margin-bottom: 30px;
+            }
+            .content-tab .content-inner .box {
+                width: calc((100% - 32px) / 2);
+            }
+        }
+        &.page .content {
+            padding-right: 0;
+        }
+        .page-content {
+            flex-wrap: wrap;
+            .content-box {
+                width: 100%;
+            }
+            .image {
+                margin: 0 auto 40px;
+                padding-left: 0;
+                width: 100%;
+                max-width: 541px;
+            }
+        }
+        .counter_wrapper {
+            flex-wrap: wrap;
+            .box {
+                padding: 0 !important;
+                width: calc((100% - 20px) / 2);
+            }
+        }
+    }
+    .home17 .dashboard-wapper #side-bar-dashboard {
+        box-shadow: none;
+    }
+    .home17 .dashboard-wapper {
+        display: block;
+    }
+    .home17 #side-bar-dashboard {
+        margin-top: 30px;
+        height: 100%;
+    }
+    .home17 { 
+        overflow: visible;
+    }
     .home17 .dashboard-style2 {
         .article-dashboard {
             padding: 0;
@@ -538,9 +601,53 @@
             line-height: 1.2;
         }
     }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box .inner > div {
+        width: calc((100% - 60px) / 3);
+        padding: 20px 0 15px 20px;
+    }
 }
 
 @include res767 {
+    .home18 #footer {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 12px 0;
+    }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner {
+        &#Contact form fieldset {
+            width: 100%;
+        }
+        .flat-tabs { 
+            .content-tab .content-inner .box {
+                width: 100%;
+            }
+        }
+        padding: 40px 0 40px !important;
+        .my_skill .my_skill_box .content-progress-box {
+            width: 100%;
+        }
+        &#Service .wrapper_service .box-style2 {
+            width: 100%;
+        }
+    }
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .resume-box .box {
+        overflow-x: auto;
+        &:hover {
+            &::-webkit-scrollbar {
+                display: block;
+            }
+        }
+        &::-webkit-scrollbar {
+            @include transition3;
+            width: 10px;
+            height: 4px; 
+            position: relative;
+            display: none;
+        }
+        .inner {
+            width: 767px; 
+        }
+    }
     .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .flat-tabs {
         margin-top: 20px;
         .menu-tab {
@@ -1284,6 +1391,12 @@
 
 
 @include res600 {
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .counter_wrapper .box {
+        width: 100%;
+    }
+    .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner.page .title span {
+        font-size: 40px;
+    }
     .home17 .dashboard-style2 .article-dashboard .body-dashboard .section-inner .list_contact li {
         width: 100%;
     }
@@ -1427,6 +1540,9 @@
 }
 
 @include res500 {
+    .home18 .dashboard-style2 .article-dashboard .body-dashboard .section-inner.page .content ul li {
+        width: 100%;
+    }
     .home14 .tf-about .counter_wrapper {
         .box {
             width: 100%;
